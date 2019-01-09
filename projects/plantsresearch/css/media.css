@@ -1,0 +1,310 @@
+@media (min-width: 1600px) {
+	.header-minor-links {
+		padding-left: 50px;
+	}
+}
+
+@media (min-width: 992px) {
+	.only-mobile {
+		display: none;
+	}
+
+	.header-content {
+		min-height: 155px;
+	}
+
+}
+
+@media (max-width: 1250px) {
+	.header-main-link {
+		font-size: 17px;
+	}
+
+	.content h1 {
+		font-size: 40px;
+	}
+	.content h2 {
+		font-size: 35px;
+	}
+
+	.content h3 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-content {
+		min-height: 100px;
+	}
+
+	.header-logo {
+		width: 20%;
+	}
+
+	.header-main-links {
+		width: 60%;
+	}
+
+	.mobile-menu-button {
+		width: 20%;
+	}
+
+	.mobile-menu-button.mobile-menu-button-overlay {
+		display: block;
+		width: 100%;
+		z-index: 999;
+	}
+
+	.header-menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		padding: 20px;
+		background-color: #7c9e2a;
+		height: 0;
+		z-index: 999;
+	}
+
+	.header-menu.open {
+		display: flex;
+		height: auto;
+	}
+
+
+	.banner-content {
+		font-size: 20px;
+	}
+
+	.banner-content-wrapper {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.banner-content {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.banner-right, .banner-left {
+		width: 100%;
+	}
+
+	.banner-right {
+		padding-top: 30px;
+	}
+
+	.banner-quote {
+		float: none;
+	}
+
+	h2.our-clients-header {
+		font-size: 33px;
+	}
+
+	.left-column {
+		float: none;
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.left-menu {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.main-column {
+		margin-left: 0;
+		padding-top: 25px;
+	}
+	.breadcrumbs li:not(:last-of-type)::after {
+		font-size: 11px;
+	}
+	.left-menu {
+		font-size: 16px;
+	}
+	.left-menu-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.left-menu-item {
+		width: 33.33%;
+		border-top: 1px solid #d4d4d4;
+		border-bottom: 1px solid #d4d4d4;
+		border-left: 1px solid #d4d4d4;
+		margin-top: -1px;
+		margin-left: -1px;
+		display: flex;
+		align-items: center;
+	}
+	.left-menu-item.current {
+		order: 100;
+		width: 100%;
+	}
+	.left-menu-item {
+		padding: 0;
+	}
+	.left-menu-link {
+		padding: 17px 15px;
+		border-top: 0;
+		line-height: 1.3;
+	}
+	.left-menu-header-text {
+		padding: 17px 15px;
+		font-size: 18px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.header-menu {
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.header-minor-links {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 0;
+		width: 75%;
+	}
+	.langs {
+		width: 25%
+	}
+
+	.banner-right {
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: 16px;
+	}
+	.content h1 {
+		font-size: 30px;
+	}
+	.content h2 {
+		font-size: 26px;
+	}
+	.content h3 {
+		font-size: 20px;
+	}
+	.content .list-h {
+		font-size: 16px;
+	}
+	.header-content {
+		min-height: auto;
+		flex-wrap: wrap;
+	}
+
+	.header .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.header-logo, .header-main-link.mobile-menu-button {
+		min-height: 80px;
+	}
+
+	.header-logo {
+		margin-left: 5%;
+		width: 45%;
+		order: 1;
+	}
+
+	.header-main-link {
+		padding-bottom: 18px;
+		padding-top: 18px;
+		width: 100%;
+	}
+
+	.header-main-link.mobile-menu-button {
+		margin-right: 5%;
+		width: 45%;
+		order: 2;
+	}
+
+	.mobile-menu-button.mobile-menu-button-overlay {
+		width: 100%;
+	}
+
+	.header-main-links {
+		width: 100%;
+		flex-wrap: wrap;
+		order: 3;
+	}
+
+	.header-menu {
+		top: 80px;
+	}
+
+	.header-minor-links {
+		padding: 5px;
+	}
+
+	.header-minor-link {
+		font-size: 16px;
+	}
+
+	.banner-content {
+		font-size: 16px;
+	}
+
+	.banner-quote {
+		max-width: 300px;
+	}
+
+	.banner-quote::before {
+		left: 0;
+	}
+
+	.banner-content p {
+		margin-bottom: 15px;
+	}
+
+	h2.our-clients-header {
+		font-size: 24px;
+	}
+	.breadcrumbs {
+		font-size: 14px;
+	}
+	.left-menu {
+		font-size: 14px;
+	}
+	.left-menu-item {
+		width: 50%;
+	}
+	.left-menu-header-text {
+		padding: 10px 15px;
+		font-size: 16px;
+	}
+	.left-menu-item {
+		padding: 0;
+	}
+	.left-menu-link {
+		padding: 10px 15px;
+	}
+	.intro-italic {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+
+}
+
+@media (max-width: 535px) {
+	.our-clients-header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.our-clients-header::before, .our-clients-header::after {
+		display: none;
+	}
+	.link-button .button-text {
+		font-size: 14px;
+	}
+}
