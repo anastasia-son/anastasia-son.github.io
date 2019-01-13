@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Адаптивная кроссбраузерная верстка сайтов">
-    <meta name="yandex-verification" content="1d617043efc9e311" />
+    <meta name="yandex-verification" content="1d617043efc9e311"/>
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200&amp;subset=cyrillic" rel="stylesheet">
 
@@ -20,31 +20,10 @@
 
     <header class="header">
 
-        <nav class="socials">
-            <ul class="socials-list">
-                <li class="socials-item">
-                    <a class="socials-link" href="https://vk.com/a.sonberg" rel="nofollow" target="_blank" title="VK">
-                        <svg aria-hidden="true"><use xlink:href="#vk"></use></svg>
-                    </a>
-                </li>
-
-                <li class="socials-item">
-                    <a class="socials-link" href="https://www.facebook.com/anastasiia.sonberg.3" rel="nofollow" target="_blank" title="Facebook">
-                        <svg aria-hidden="true"><use xlink:href="#facebook"></use></svg>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <span class="photo">
+        <figure class="photo">
             <img src="img/avatar2.jpg" alt="Мое фото">
-        </span>
+        </figure>
 
-
-    </header>
-
-    <main class="main">
         <div class="main-info">
             <h1 class="main-title">
                 Портфолио верстальщика
@@ -53,50 +32,79 @@
                 <p>Кроссбраузерная | резиновая | адаптивная | отзывчивая вёрстка </p>
             </div>
         </div>
-        <section class="portfolio">
-            <div class="column">
 
-                <div class="portfolio-elem slide-effect js-touch-link">
-                    <div class="img-container">
-                        <a href="projects/carshop/index.html" class="description" rel="nofollow">
-                            <h2 class="caption">Адаптивный интернет-магазин автомобилей</h2>
+        <ul class="socials-list">
+            <li class="socials-item">
+                <a class="socials-link" href="https://vk.com/a.sonberg" rel="nofollow" target="_blank">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
+                <span class="social-tooltip">вконтакте</span>
+            </li>
+
+            <li class="socials-item">
+                <a class="socials-link" href="https://www.facebook.com/anastasiia.sonberg.3" rel="nofollow"
+                   target="_blank">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <span class="social-tooltip">facebook</span>
+            </li>
+
+        </ul>
+    </header>
+
+    <main class="main">
+
+        <section>
+            <h2 class="visually-hidden">Свёрстанные сайты</h2>
+            <div class="portfolio">
+                <div class="column">
+                    <article class="portfolio-elem slide-effect js-touch-link">
+                        <div class="img-container">
+                            <a href="projects/carshop/index.html" class="description">
+                                <h3 class="caption">Адаптивный интернет-магазин автомобилей</h3>
+                                <p>
+                                    Всплывающие формы, js-валидация форм, слайдеры, галереи картинок lightbox, боковое
+                                    меню
+                                </p>
+                                <span class="link"><span class="link-text">Смотреть</span></span>
+                            </a>
+                            <img src="img/carshop_thumbnail.png" alt="Cars Shop">
+                        </div>
+
+                    </article>
+
+                </div>
+                <div class="column">
+                    <article class="portfolio-elem slide-effect">
+                        <div class="img-container">
+                            <a href="projects/plantsresearch/index.html" class="description">
+                                <h3 class="caption">Адаптивный сайт</h3>
+                                <p>
+                                    Нестандартная шапка, слайдер
+                                </p>
+                                <span class="link"><span class="link-text">Смотреть</span></span>
+                            </a>
+                            <img src="img/plantsresearch_thumbnail.png" alt="">
+                        </div>
+                    </article>
+
+                </div>
+                <div class="column">
+
+                    <article class="portfolio-elem slide-effect">
+                        <a href="projects/christmas_landing/index.html" class="description">
+                            <h3 class="caption">Адаптивный лэндинг <br> "Город чудес"</h3>
                             <p>
-                                Всплывающие формы, js-валидация форм, слайдеры, галереи картинок lightbox, боковое меню
+                                Слайдеры, адаптивные галереи фотографий
                             </p>
                             <span class="link"><span class="link-text">Смотреть</span></span>
                         </a>
-                        <img src="img/carshop_thumbnail.png" alt="Cars Shop">
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="column">
-                <div class="portfolio-elem slide-effect">
-                    <div class="img-container">
-                        <a href="projects/plantsresearch/index.html" class="description" rel="nofollow">
-                            <h2 class="caption">Адаптивный сайт</h2>
-                            <p>
-                                Нестандартная шапка, слайдер
-                            </p>
-                            <span class="link"><span class="link-text">Смотреть</span></span>
-                        </a>
-                        <img src="img/plantsresearch_thumbnail.png" alt="">
-                    </div>
-                </div>
-
-            </div>
-            <div class="column">
-
-                <div class="portfolio-elem slide-effect">
-                    <a href="projects/christmas_landing/index.html" class="description" rel="nofollow">
-                        <h2 class="caption">Адаптивный лэндинг <br> "Город чудес"</h2>
-                        <p>
-                            Слайдеры, адаптивные галереи фотографий
-                        </p>
-                        <span class="link"><span class="link-text">Смотреть</span></span>
-                    </a>
-                    <img src="img/christmas_landing_thumbnail.png" alt='Лэндинг "Город чудес"'>
+                        <img src="img/christmas_landing_thumbnail.png" alt='Лэндинг "Город чудес"'>
+                    </article>
                 </div>
             </div>
         </section>
@@ -142,62 +150,36 @@
 </div>
 
 
-
-
 <div class="svg-sprite" style="display:none; width: 0; height: 0;">
     <svg xmlns="http://www.w3.org/2000/svg">
-
-        <symbol id="vk"  viewBox="0 0 304.36 304.36">
+        <symbol id="facebook" viewBox="0 0 21 21">
             <g>
-                <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982
-		c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474
-		c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587
-		c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641
-		c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07
-		c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521
-		c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434
-		c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799
-		c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663
-		c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366
-		c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258
-		c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072
-		C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"/>
+                <path d="M14.2,2.5h-2.316C10.5754,2.5,9.5,3.5609,9.5,4.8695V19.1" fill="none" stroke-linecap="round"
+                      stroke-miterlimit="1" stroke-linejoin="round"/>
+                <line x1="6.8685" y1="7.5" x2="14.0685" y2="7.5" fill="none" stroke-linecap="round"
+                      stroke-miterlimit="1" stroke-linejoin="round"/>
             </g>
         </symbol>
-
-        <symbol id="insta" viewBox="0 0 512 512">
+        <symbol id="vk" viewBox="0 0 21 21">
             <g>
-                <g>
-                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
-			C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
-			h192c61.76,0,112,50.24,112,112V352z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
-			c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
-                </g>
-            </g>
-            <g>
-                <g>
-                    <circle cx="393.6" cy="118.4" r="17.056"/>
-                </g>
+                <path d="M1.5,4.5c0.3,3.12,4.14,12,9,12c0,-3.0673,0,-12,0,-12" fill="none" stroke-linecap="round"
+                      stroke-miterlimit="1" stroke-linejoin="round"/>
+                <path d="M19.5,4.5c-0.45,2.97,-3.48,7.5,-9,7.5" fill="none" stroke-linecap="round" stroke-miterlimit="1"
+                      stroke-linejoin="round"/>
+                <path d="M19.5,16.5c-0.45,-1.782,-3.48,-4.5,-9,-4.5" fill="none" stroke-linecap="round"
+                      stroke-miterlimit="1" stroke-linejoin="round"/>
             </g>
         </symbol>
-
-        <symbol id="facebook" viewBox="0 0 310 310">
+        <symbol id="insta" viewBox="0 0 21 21">
             <g>
-                <path i d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
-		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
-		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
-		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
-		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+                <path d="M16.01,18.5H4.99C3.6148,18.5,2.5,17.3852,2.5,16.01V4.99C2.5,3.6148,3.6148,2.5,4.99,2.5h11.02c1.3752,0,2.49,1.1148,2.49,2.49v11.02C18.5,17.3852,17.3852,18.5,16.01,18.5z"
+                      fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1"
+                      stroke-linejoin="round"/>
+                <circle cx="10.5" cy="10.5" r="3.9467" fill="none" stroke="#434A54" stroke-width="1"
+                        stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+                <circle cx="15.14" cy="5.86" r="1.2533" fill="#434A54"/>
             </g>
         </symbol>
-
-
-
     </svg>
 </div>
 
