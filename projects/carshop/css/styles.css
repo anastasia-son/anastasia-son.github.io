@@ -1074,12 +1074,6 @@ a.button-bl:hover, .button-bl:hover {
 .interaction-buttons.fixed {
     position: fixed;
     top: 0;
-    /*top: 50vh;*/
-    /*-webkit-transform: translateY(-50%);*/
-    /*-moz-transform: translateY(-50%);*/
-    /*-ms-transform: translateY(-50%);*/
-    /*-o-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
     right: auto;
     z-index: 600;
 }
@@ -1092,12 +1086,12 @@ a.button-bl:hover, .button-bl:hover {
     padding: 12px 15px;
 }
 
-.interaction-btn:hover {
+.interaction-btn:hover, .interaction-btn:focus {
     color: #00adef;
 }
 
 .interaction-btn:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .interaction-btn-text {
@@ -1109,7 +1103,8 @@ a.button-bl:hover, .button-bl:hover {
     transition: color 0.3s ease;
 }
 
-.interaction-btn:hover .interaction-btn-text {
+.interaction-btn:hover .interaction-btn-text,
+.interaction-btn:focus .interaction-btn-text{
     color: #00adef;
 }
 
@@ -1117,21 +1112,6 @@ a.button-bl:hover, .button-bl:hover {
     float: right;
 }
 
-/*.interaction-btn:hover .interaction-btn-icon.sprite-aside_steering-wheel {*/
-/*background-position: -520px -15px;*/
-/*}*/
-
-/*.interaction-btn:hover .interaction-btn-icon.sprite-aside_car {*/
-/*background-position: -304px -15px;*/
-/*}*/
-
-/*.interaction-btn:hover .interaction-btn-icon.sprite-aside_phone-call {*/
-/*background-position: -412px -15px;*/
-/*}*/
-
-/*.interaction-btn:hover .interaction-btn-icon.sprite-aside_calculator {*/
-/*background-position: -202px -15px;*/
-/*}*/
 
 .interaction-btn-icon svg {
     width: 24px;
@@ -1140,7 +1120,8 @@ a.button-bl:hover, .button-bl:hover {
     transition: fill 0.3s ease;
 }
 
-.interaction-btn:hover svg {
+.interaction-btn:hover svg,
+.interaction-btn:focus svg  {
     fill: #00adef;
 }
 

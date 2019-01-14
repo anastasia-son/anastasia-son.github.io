@@ -33,9 +33,11 @@
 		line-height: 1;
 	}
 
-	.interaction-btn:hover > .interaction-btn-text {
+	.interaction-btn:hover > .interaction-btn-text,
+	.interaction-btn:focus > .interaction-btn-text {
 		display: block;
 	}
+
 
 }
 
