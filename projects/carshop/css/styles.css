@@ -2549,7 +2549,7 @@ input.error {
     transition: all 0.1s ease-in-out;
 }
 
-.sidebar-nav-item a:hover {
+.sidebar-nav-item a:hover, .sidebar-nav-item a:focus {
     background-color: rgba(255, 255, 255, 0.8);
 }
 

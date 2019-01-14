@@ -835,7 +835,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.1s ease-in-out;
 }
 
-.sidebar-nav-item a:hover {
+.sidebar-nav-item a:hover, .sidebar-nav-item a:focus {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
