@@ -462,7 +462,6 @@ p {
     transition: all 0.3s ease-out;
 }
 
-
 .socials-link:hover + .social-tooltip,
 .socials-link:focus + .social-tooltip {
     color: #fff;
