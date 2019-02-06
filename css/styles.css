@@ -462,6 +462,7 @@ p {
     transition: all 0.3s ease-out;
 }
 
+
 .socials-link:hover + .social-tooltip,
 .socials-link:focus + .social-tooltip {
     color: #fff;
@@ -478,11 +479,9 @@ p {
     -o-transition-delay: 0.9s;
     transition-delay: 0.9s;
 }
-
 .main-info {
     text-align: center;
 }
-
 .main-info p {
     margin: 0 0 1em;
 }
@@ -493,7 +492,6 @@ p {
     font-size: 2.5em;
     text-transform: uppercase;
 }
-
 .main-text {
     font-size: 1.2em;
     text-transform: uppercase;
