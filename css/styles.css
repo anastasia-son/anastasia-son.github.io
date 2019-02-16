@@ -406,6 +406,7 @@ p {
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    outline: 0;
 }
 
 .socials-link:hover,
@@ -528,6 +529,7 @@ p {
     -moz-border-radius: 5px;
     border-radius: 5px;
     text-align: center;
+    outline: 0;
 }
 
 .portfolio-elem .description {
@@ -539,24 +541,41 @@ p {
     justify-content: center;
     text-decoration: none;
     color: #fff;
+    outline: 0;
 }
 .portfolio-elem-desc {
     font-size: 0.9em;
+    margin: 0 0 0.5em;
+}
+.caption {
+    text-transform: uppercase;
+    margin: 0 0 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+.protfolio-elem-date {
+    display: block;
+    font-size: 11px;
+    font-weight: 100;
 }
 .portfolio-elem .link {
     position: relative;
+    margin: 15px 0 0;
     display: inline-block;
     align-self: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    padding: 0.7em 1.4em;
+    text-transform: uppercase;
+    padding: 0.8em 1.6em 0.7em;
+    font-size: 15px;
+    outline: 0;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     transition: all 0.5s ease-in-out;
-
 }
 
 .portfolio-elem .link .link-text {
+    letter-spacing: 0.5px;
     position: relative;
     display: block;
     transition: color 0.5s ease-in-out;
@@ -598,7 +617,7 @@ p {
 }
 
 .portfolio-elem .link:hover, .portfolio-elem .description:focus .link {
-    border-color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio-elem .link:hover::before,
@@ -606,7 +625,7 @@ p {
 .portfolio-elem .description:focus .link::before,
 .portfolio-elem .description:focus .link::after {
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio-elem .link:hover .link-text::after,
@@ -620,19 +639,10 @@ p {
 
 .portfolio-elem .link:hover .link-text,
 .portfolio-elem .description:focus .link-text {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.caption {
-    margin: 0;
-    padding: 16px 0;
-    font-size: 1em;
-    font-weight: bold;
-}
 
-.description p {
-    margin: 0 0 30px;
-}
 
 
 .portfolio-elem img {
@@ -643,126 +653,130 @@ p {
     border-radius: 5px;
 }
 
-.portfolio-elem.slide-effect {
+/*.portfolio-elem.slide-effect {*/
+    /*z-index: 1;*/
+/*}*/
+
+/*.portfolio-elem.slide-effect .img-container {*/
+    /*position: relative;*/
+/*}*/
+
+/*.portfolio-elem.slide-effect.slide-effect-move img {*/
+    /*transition: transform 0.4s ease;*/
+/*}*/
+
+/*.portfolio-elem.slide-effect.slide-effect-move:hover img {*/
+    /*transform: translateX(100%);*/
+/*}*/
+
+/*.portfolio-elem.slide-effect .description {*/
+    /*position: absolute;*/
+    /*display: flex;*/
+    /*flex-direction:column;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*z-index: 5;*/
+    /*background-color: rgba(0, 0, 0, 0);*/
+    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));*/
+    /*align-items: center;*/
+    /*opacity: 0;*/
+    /*transform: translateX(-100%);*/
+    /*transition: transform 0.4s ease, background-color 1.5s ease, opacity 0.4s ease;*/
+/*}*/
+
+/*.portfolio-elem.slide-effect:hover .description,.portfolio-elem.slide-effect:focus .description,*/
+/*.portfolio-elem.slide-effect .description:focus {*/
+    /*transform: translateX(0);*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /*opacity: 1;*/
+/*}*/
+
+
+
+.portfolio-elem.card-effect {
     z-index: 1;
 }
 
-.portfolio-elem.slide-effect .img-container {
+.portfolio-elem.card-effect .img-container {
     position: relative;
 }
 
-.portfolio-elem.slide-effect.slide-effect-move img {
-    transition: transform 0.4s ease;
+.portfolio-elem.card-effect .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.portfolio-elem.slide-effect.slide-effect-move:hover img {
-    transform: translateX(100%);
-}
-
-.portfolio-elem.slide-effect .description {
+.portfolio-elem.card-effect .description {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
-    align-items: center;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease, background-color 1.5s ease, opacity 0.4s ease;
+    transition: all 0.4s ease-out;
 }
 
-.portfolio-elem.slide-effect:hover .description,.portfolio-elem.slide-effect:focus .description,
-.portfolio-elem.slide-effect .description:focus {
-    transform: translateX(0);
+
+.portfolio-elem.card-effect:hover .description, .portfolio-elem.card-effect:focus .description,
+.portfolio-elem.card-effect .description:focus {
+    opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
 }
 
-.portfolio-elem.blur-effect .img-container {
-    position: relative;
+.portfolio-elem.card-effect:hover img {
+     transition: all 0.4s ease-out;
+}
+.portfolio-elem.card-effect:hover img, .portfolio-elem.card-effect:focus img, .portfolio-elem.card-effect:focus-within img  {
+    filter: blur(2px);
 }
 
-.portfolio-elem.blur-effect img {
-    -webkit-transition: filter 0.5s linear;
-    -moz-transition: filter 0.5s linear;
-    -ms-transition: filter 0.5s linear;
-    -o-transition: filter 0.5s linear;
-    transition: filter 0.5s linear;
-}
 
-.portfolio-elem.blur-effect .caption {
-    width: 100%;
-    position: relative;
-    z-index: 10;
-}
 
-.portfolio-elem.blur-effect .description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    overflow: hidden;
-    opacity: 0;
-    /*visibility: hidden;*/
-    transition: opacity 0.3s linear 0.3s, box-shadow 0.5s linear, transform 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    /*transform: translate(-5px, -5px);*/
-}
+/*.portfolio-elem.blur-effect .img-container {*/
+    /*position: relative;*/
+/*}*/
 
-.portfolio-elem.blur-effect:hover .description {
-    /*visibility: visible;*/
-    opacity: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+/*.portfolio-elem.blur-effect img {*/
+    /*-webkit-transition: filter 0.5s linear;*/
+    /*-moz-transition: filter 0.5s linear;*/
+    /*-ms-transition: filter 0.5s linear;*/
+    /*-o-transition: filter 0.5s linear;*/
+    /*transition: filter 0.5s linear;*/
+/*}*/
 
-    /*transform: translate(0, 0);*/
-}
+/*.portfolio-elem.blur-effect .caption {*/
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*z-index: 10;*/
+/*}*/
 
-.portfolio-elem.blur-effect:hover img {
-    filter: blur(4px);
-}
+/*.portfolio-elem.blur-effect .description {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*width: 70%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*margin: auto;*/
+    /*overflow: hidden;*/
+    /*opacity: 0;*/
+    /*!*visibility: hidden;*!*/
+    /*transition: opacity 0.3s linear 0.3s, box-shadow 0.5s linear, transform 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+    /*!*transform: translate(-5px, -5px);*!*/
+/*}*/
 
-@-webkit-keyframes bouncing {
-    from, to {
-        -webkit-transform: scale(1, 1);
-    }
-    40% {
-        -webkit-transform: scale(1.1, 0.9);
-    }
-    65% {
-        -webkit-transform: scale(0.9, 1.07);
-    }
-    85% {
-        -webkit-transform: scale(1.05, 0.95);
-    }
-}
+/*.portfolio-elem.blur-effect:hover .description {*/
+    /*!*visibility: visible;*!*/
+    /*opacity: 1;*/
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);*/
 
-.portfolio-elem.bouncing-effect .description {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 7, 35, 0.8);
-    transform: scale(0);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+    /*!*transform: translate(0, 0);*!*/
+/*}*/
 
-.portfolio-elem.bouncing-effect:hover {
-    -webkit-animation: bouncing 0.9s 1;
-    animation: bouncing 0.9s 1;
-}
+/*.portfolio-elem.blur-effect:hover img {*/
+    /*filter: blur(4px);*/
+/*}*/
 
-.portfolio-elem.bouncing-effect:hover .description {
-    opacity: 1;
-    transform: scale(1);
-}
 
 .contact {
     max-width: 800px;
