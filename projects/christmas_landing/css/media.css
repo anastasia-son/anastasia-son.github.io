@@ -33,9 +33,7 @@
 	.footer__button-up {
 		top: 50%;
 		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
 		transform: translateY(-50%);
 		right: 35px;
 	}
@@ -128,6 +126,7 @@
 
 @media (max-width: 1023px) {
 	.purchase__event {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -153,14 +152,23 @@
 	}
 
 	.hero {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
 	.hero__container {
 		width: 100%;
 		padding: 0 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 
@@ -281,9 +289,7 @@
 		position: static;
 		display: block;
 		-webkit-transform: none;
-		-moz-transform: none;
 		-ms-transform: none;
-		-o-transform: none;
 		transform: none;
 		margin: 20px auto 0;
 		max-width: 80px;
@@ -308,6 +314,8 @@
 	}
 
 	.purchase__socials {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		margin: 20px -10px;
 	}

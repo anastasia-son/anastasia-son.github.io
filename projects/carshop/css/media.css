@@ -8,6 +8,9 @@
 		position: absolute;
 		top: 60px;
 		right: -55px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -48,17 +51,28 @@
 
 @media (max-width: 999px) and (min-width: 768px) {
 	.header-top-left {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		width: 260px;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
 		align-items: flex-end;
+		-webkit-box-flex: 0;
+		-ms-flex-positive: 0;
 		flex-grow: 0;
 	}
 
 	.header-top-right {
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
 		align-self: center;
 	}
 
 	.company-data {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		margin-top: 15px;
 		margin-right: 18px;
@@ -88,10 +102,10 @@
 		background-position: -836px -15px;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
-		-o-transform: translateX(-50%);
 		transform: translateX(-50%);
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-o-transition: opacity 0.3s ease-in-out;
 		transition: opacity 0.3s ease-in-out;
 	}
 
@@ -171,12 +185,19 @@
 	}
 
 	.class-info-interaction {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 
 	.class-info-btn-1, .class-info-btn-2 {
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
 		flex-grow: 1;
 		min-width: 48%;
 	}
@@ -198,6 +219,7 @@
 	}
 
 	.car-desc-main {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 
 	}
@@ -216,10 +238,14 @@
 	}
 
 	.car-desc-additional-btns .button-bl:first-child {
+		-webkit-box-flex: 3;
+		-ms-flex-positive: 3;
 		flex-grow: 3;
 	}
 
 	.car-desc-additional-btns .button-bl:nth-child(2) {
+		-webkit-box-flex: 2;
+		-ms-flex-positive: 2;
 		flex-grow: 2;
 	}
 
@@ -279,6 +305,7 @@
 	}
 
 	.header-top {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding-bottom: 0;
 		padding-left: 0;
@@ -290,7 +317,11 @@
 		margin-top: 20px;
 		background-color: #28292d;
 		padding: 10px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 
@@ -302,11 +333,22 @@
 		position: absolute;
 		width: 100%;
 		will-change: transform;
+		-webkit-transform: translateX(-105%);
+		-ms-transform: translateX(-105%);
 		transform: translateX(-105%);
 		height: auto;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
 		flex-grow: 1;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+		transition: -webkit-transform 0.5s ease-in-out;
+		-o-transition: transform 0.5s ease-in-out;
 		transition: transform 0.5s ease-in-out;
+		transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 		visibility: hidden;
 		z-index: 350;
 	}
@@ -314,9 +356,7 @@
 	.main-menu.mobile-show {
 		visibility: visible;
 		-webkit-transform: translateX(0);
-		-moz-transform: translateX(0);
 		-ms-transform: translateX(0);
-		-o-transform: translateX(0);
 		transform: translateX(0);
 	}
 
@@ -435,7 +475,11 @@
 	}
 
 	.cars-list .car-element-link {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -463,9 +507,7 @@
 		color: #979797;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
 		transform: translateY(-50%);
 	}
 
@@ -526,7 +568,11 @@
 	}
 
 	.pagination {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 
@@ -560,7 +606,12 @@
 
 @media (max-width: 666px) {
 	.contact-us {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
 		align-items: flex-start;
 	}
 
@@ -581,7 +632,12 @@
 
 @media (max-width: 560px) {
 	.interaction-buttons {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -633,6 +689,7 @@
 	}
 
 	.car-desc-additional-btns {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -747,10 +804,5 @@
 	.result-car-text-info .model-name {
 		font-size: 13px;
 	}
-
-	/*.result-car-link-img {*/
-	/*width: 30%;*/
-	/*padding-top: 17%;*/
-	/*}*/
 
 }

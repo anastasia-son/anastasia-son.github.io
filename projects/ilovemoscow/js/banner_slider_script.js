@@ -13,14 +13,8 @@ $(document).ready(function () {
 
     $.fn.isOutOfViewport = function () {
         var elementTop = $(this).offset().top;
-
         var elementBottom = elementTop + $(this).outerHeight();
-
         var viewportTop = $(window).scrollTop();
-
-        console.log("elementBottom: " + elementBottom);
-        console.log("viewportTop: "  + viewportTop);
-
         return elementBottom <= viewportTop;
     };
     $.fn.isMiddleOutOfViewport = function () {

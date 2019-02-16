@@ -33,7 +33,7 @@
 	var lb_code =
 	'<div id="lcl_wrap" class="lcl_pre_show lcl_pre_first_el lcl_first_sizing lcl_is_resizing">'+
 		'<div id="lcl_window">'+
-			'<div id="lcl_corner_close" title="Закрыть"></div>'+
+			'<div id="lcl_corner_close" title="закрыть"></div>'+
 			'<div id="lcl_loader" class="lcl_loader_pre_first_el"><span id="lcll_1"></span><span id="lcll_2"></span></div>'+
 			'<div id="lcl_nav_cmd">'+
 				'<div class="lcl_icon lcl_prev" title="назад"></div>'+
@@ -41,13 +41,13 @@
 				'<div class="lcl_icon lcl_next" title="дальше"></div>'+
 				'<div class="lcl_icon lcl_counter"></div>'+
 
-				'<div class="lcl_icon lcl_right_icon lcl_close" title="Закрыть"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_close" title="закрыть"></div>'+
 				
-				'<div class="lcl_icon lcl_right_icon lcl_fullscreen" title="Переключить полноэкранный вид"></div>'+
-				'<div class="lcl_icon lcl_right_icon lcl_txt_toggle" title="Показать/скрыть текст"></div>'+
-				'<div class="lcl_icon lcl_right_icon lcl_download" title="Скачать"></div>'+
-				'<div class="lcl_icon lcl_right_icon lcl_thumbs_toggle" title="Показать/скрыть миниатюры"></div>'+
-				'<div class="lcl_icon lcl_right_icon lcl_socials" title="Показать/скрыть социальные сети"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_fullscreen" title="переключить полноэкранный вид"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_txt_toggle" title="показать/скрыть текст"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_download" title="скачать"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_thumbs_toggle" title="показать/скрыть миниатюры"></div>'+
+				'<div class="lcl_icon lcl_right_icon lcl_socials" title="показать/скрыть социальные сети"></div>'+
 			'</div>'+
 			'<div id="lcl_contents_wrap">'+
 				'<div id="lcl_subj">'+
