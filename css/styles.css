@@ -540,7 +540,9 @@ p {
     text-decoration: none;
     color: #fff;
 }
-
+.portfolio-elem-desc {
+    font-size: 0.9em;
+}
 .portfolio-elem .link {
     position: relative;
     display: inline-block;
