@@ -421,6 +421,7 @@ img {
 .gallery__slide {
 	display: block;
 	outline: 0;
+	overflow: hidden;
 }
 .gallery__slide-img {
 	display: block;
@@ -428,7 +429,19 @@ img {
 	width: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
+	transition: all 1.8s ease-out;
 }
+
+.gallery__slide:nth-child(odd):hover .gallery__slide-img, .gallery__slide:nth-child(odd):focus .gallery__slide-img {
+	transition: all 6s ease-out;
+	transform: scale(1.15) rotate(3deg);
+}
+
+.gallery__slide:nth-child(even):hover .gallery__slide-img, .gallery__slide:nth-child(even):focus .gallery__slide-img {
+	transition: all 6s ease-out;
+	transform: scale(1.15) rotate(-3deg);
+}
+
 .gallery__container {
 	position: absolute;
 	max-width: 1160px;
