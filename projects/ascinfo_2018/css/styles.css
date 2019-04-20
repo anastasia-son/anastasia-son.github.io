@@ -809,6 +809,7 @@ a {
 
 .mobile-menu-btn {
     display: none;
+    flex-shrink: 0;
     position: relative;
     width: 18px;
     height: 16px;
@@ -2406,7 +2407,7 @@ a.card:hover {
 .sidebar-nav {
     position: fixed;
     z-index: 100;
-    top: 0;
+    top: 70px;
     left: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
@@ -2478,6 +2479,10 @@ a.card:hover {
 }
 
 @media (max-width: 1024px) {
+    .sidebar-nav {
+        left: auto;
+        right: 0;
+    }
     .sidebar-nav-item {
         padding: 5px 3px;
     }
