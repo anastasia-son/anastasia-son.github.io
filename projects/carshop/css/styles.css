@@ -2717,6 +2717,7 @@ input.error {
     }
 
     .sidebar-nav-list {
+        padding: 0 5px;
         display: flex;
         flex-wrap: wrap;
     }

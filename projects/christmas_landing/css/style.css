@@ -799,6 +799,7 @@ img {
 
 .sidebar-nav {
 	position: fixed;
+    z-index:1100;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -875,14 +876,11 @@ img {
 	}
 
 	.sidebar-nav-list {
+        padding: 0 5px;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	.sidebar-nav {
-		left: auto;
-		right: 0;
-	}
 	.sidebar-nav-item {
 		padding: 3px 5px;
 	}

@@ -844,6 +844,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-nav {
     position: fixed;
+    z-index:1100;
     top: 0;
     left: 0;
     bottom: 0;
@@ -915,19 +916,17 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
     .sidebar-nav {
         right: 0;
+        left: 0;
         top: auto;
         bottom: 0;
     }
 
     .sidebar-nav-list {
+        padding: 0 5px;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .sidebar-nav {
-        left: auto;
-        right: 0;
-    }
     .sidebar-nav-item {
         padding: 3px 5px;
     }
