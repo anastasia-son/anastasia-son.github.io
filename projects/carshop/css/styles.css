@@ -2640,6 +2640,7 @@ input.error {
 
 .sidebar-nav {
     position: fixed;
+    z-index:1100;
     top: 0;
     left: 0;
     bottom: 0;
@@ -2709,8 +2710,19 @@ input.error {
 }
 
 @media (max-width: 1024px) {
+    .sidebar-nav {
+        right: 0;
+        top: auto;
+        bottom: 0;
+    }
+
+    .sidebar-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .sidebar-nav-item {
-        padding: 5px 3px;
+        padding: 3px 5px;
     }
 
     .sidebar-nav-item a {
