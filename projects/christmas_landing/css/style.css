@@ -780,6 +780,10 @@ img {
 	padding: 9px;
 }
 
+.footer__minor-text_dev, .footer__minor-text_dev a {
+	color: #757575;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
 	.hero {
