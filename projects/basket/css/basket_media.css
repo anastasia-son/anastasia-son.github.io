@@ -1,0 +1,156 @@
+/*Media queries for New basket*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .basket-order__block {
+        font-size: 13px;
+    }
+
+    .basket-order__header {
+        font-size: 20px;
+        padding: 10px 0 20px;
+    }
+
+    .basket__block-header {
+        font-size: 18px;
+    }
+
+    .basket__block-subheader {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+    .item-description, .item-controls {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px), (max-width: 576px) {
+    .input_promo, .input_promo_submit {
+        font-size: 13px;
+    }
+    .input_promo {
+        padding-right: 50px;
+    }
+    .input_promo_submit {
+        width: 50px;
+        margin-left: -54px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .input_promo_submit::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+        background-image: url(../img/spritesheet_basket_order.png);
+        background-repeat: no-repeat;
+        background-position: 0 -302px;
+    }
+    .input_promo-submit-text {
+        visibility: hidden;
+    }
+    .total-parameters-order {
+        margin-bottom: 20px;
+    }
+    .confirm-order {
+        text-align: center;
+    }
+    .button-confirm-order {
+        position: static;
+
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px), (max-width: 576px) {
+    .input-float-r, .input-float-l {
+        float: none;
+        width: 100%;
+    }
+    .delivery-type  .input-float-r {
+        float: right;
+        text-align: right;
+    }
+    .delivery-type .input-float-l {
+        float: left;
+    }
+    .delivery-type .input-float-l,  .delivery-type .input-float-r {
+        width: 48.5%;
+    }
+    .delivery-address-type {
+        font-size: 13px;
+    }
+
+    .input_quarter {
+        margin-left: 0;
+        float: none;
+    }
+    .basket-inside-link {
+        display: block;
+        margin-left: 40px;
+    }
+    .input-city-of-delivery {
+        font-size: 12px;
+    }
+    input#city_delivery:focus {
+        font-size: 12px;
+        /*margin-top: -1px;*/
+    }
+    #city_delivery:focus ~ #city_and_region_dropdown {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .basket__block {
+        margin-right: 0;
+    }
+
+    .basket__block, .order__block {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .basket__block-outside {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .basket__block, .order__block {
+        width: 100%;
+    }
+
+    .item-description, .item-controls {
+        float: none;
+        width: 100%;
+    }
+
+    .basket__block-common {
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .input_promo {
+        padding-left: 12px;
+    }
+    .choose-destination-to-deliver.choose-city {
+        min-width: 200px;
+    }
+    .payment-types-radiobuttons {
+        text-align: center;
+    }
+}
