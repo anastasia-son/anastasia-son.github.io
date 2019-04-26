@@ -452,7 +452,8 @@ p {
     margin-right: auto;
     padding: 8px 13px;
     font-size: 12px;
-    background-image: linear-gradient(to right, #361444, #9e6752);
+    /*background-image: linear-gradient(to right, #361444, #9e6752);*/
+    background-color: #47357a;
 
     border-radius: 7px;
     font-weight: 400;
