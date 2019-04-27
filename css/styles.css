@@ -304,30 +304,29 @@ body {
     line-height: 1.4;
     color: #ffffff;
     background-color: #342854;
-    background-image: url(../img/gradient-background_c.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    /*background-image: radial-gradient(*/
-    /*circle at top left,*/
-    /*#361444 7%,*/
-    /*transparent 50%*/
-    /*),*/
-    /*radial-gradient(*/
-    /*circle at bottom right,*/
-    /*#10797b 3%,*/
-    /*transparent 55%*/
-    /*),*/
-    /*radial-gradient(*/
-    /*circle at top right,*/
-    /*#082953 5%,*/
-    /*transparent 70%*/
-    /*),*/
-    /*radial-gradient(*/
-    /*circle at bottom left,*/
-    /*#e39779 8%,*/
-    /*transparent 60%*/
-    /*);*/
+    background-image: radial-gradient(
+    circle at top left,
+    #361444 7%,
+    transparent 50%
+    ),
+    radial-gradient(
+    circle at bottom right,
+    #10797b 3%,
+    transparent 55%
+    ),
+    radial-gradient(
+    circle at top right,
+    #082953 5%,
+    transparent 70%
+    ),
+    radial-gradient(
+    circle at bottom left,
+    #e39779 8%,
+    transparent 60%
+    );
 }
 
 body, body * {
@@ -492,19 +491,24 @@ p {
 
 .main {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .main-info {
-    padding: 1.5em 0 5.5em;
+    padding: 1.5rem 0 5.5rem;
 }
+
 .main-tagline {
     text-transform: uppercase;
-    font-size: 1.8em;
-    margin: 1.3em 0 1.8em;
-}
-.main-tagline.main-tagline_sm {
     font-size: 1.2em;
+    margin: 2em 0 24px;
 }
+
+.main-tech {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 0 0 2.5em;
+}
+
 .main-info .pa {
     margin: 0 0 1em;
 }
@@ -512,7 +516,7 @@ p {
 .main-title {
     margin: 0;
     font-size: 2.5em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .main-text {
