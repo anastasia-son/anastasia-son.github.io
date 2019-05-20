@@ -1,0 +1,13 @@
+.longread__content {
+	position: relative;
+	z-index: 20;
+}
+
+.longread__column {
+	background-color: rgba(255,255,255,0.9);
+}
+
+.longread__column_right {
+	margin-left: auto;
+}
+

@@ -1,0 +1,20 @@
+.section-head {
+	padding: 80px 0;
+}
+
+.section-head__img {
+	margin-bottom: 20px;
+}
+.section-head__content {
+	font-size: 20px;
+}
+
+.section-head__title {
+	font-size: 50px;
+	padding-bottom: 40px;
+}
+
+
+.section-head__title::after {
+	width: 60px;
+}

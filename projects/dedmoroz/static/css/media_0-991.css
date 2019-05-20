@@ -1,0 +1,123 @@
+.btn_size_big {
+	padding: 16px 30px;
+}
+
+.type-text-wrapper.type-text-wrapper_news-list::before {
+	height: 90vh;
+	max-height: 700px;
+	min-height: 600px;
+}
+
+
+.type-text-wrapper.type-text-wrapper_text::before {
+	height: 90vh;
+	max-height: 700px;
+	min-height: 600px;
+}
+
+
+.container-head-wrapper {
+	height: 450px;
+	background-position: center 50%;
+}
+
+.container-head-wrapper.container-head-wrapper_custom-img {
+	height: 370px;
+}
+
+.container-head {
+	padding: 80px 15px 90px;
+}
+
+.text-title {
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+.text-intro {
+	padding-top: 80px;
+}
+.text-intro::before {
+	font-size: 38px;
+}
+.text-date {
+	font-size: 11px;
+	margin-top: 20px;
+}
+.text-width_news-detail {
+	max-width: 600px;
+}
+.pagination__list {
+	margin-left: -4px;
+	margin-right: -4px;
+	padding: 5px 0 20px;
+}
+.pagination__item {
+	padding: 4px;
+}
+
+.pagination__btn {
+	width: 34px;
+	height: 30px;
+	font-size: 13px;
+	-webkit-box-shadow: 0 3px 0 2px #ebebeb,
+	0 -1px 0 2px #ffffff,
+	0 6px 1px 1px #cbcbcb;
+	box-shadow: 0 3px 0 2px #ebebeb,
+	0 -1px 0 2px #ffffff,
+	0 6px 1px 1px #cbcbcb;
+}
+.pagination__item_spacer {
+	letter-spacing: 0.2em;
+}
+
+.pagination__btn::before {
+	top: -1px;
+}
+
+.pagination__btn:active::before {
+	top: 0;
+}
+
+.pagination__btn_normal::before {
+	-webkit-box-shadow: 0 3px 0 0 #427521;
+	box-shadow: 0 3px 0 0 #427521;
+}
+
+.pagination__btn_normal:active::before {
+	-webkit-box-shadow: 0 2px 0 0 #427521;
+	box-shadow: 0 2px 0 0 #427521;
+}
+
+.pagination__btn_current::before {
+	-webkit-box-shadow: 0 3px 0 0 #c36101;
+	box-shadow: 0 3px 0 0 #c36101;
+}
+
+.pagination__btn_current:active::before {
+	-webkit-box-shadow: 0 2px 0 0 #c36101;
+	box-shadow: 0 2px 0 0 #c36101;
+}
+
+.pagination__btn_prev::before, .pagination__btn_next::before {
+	-webkit-box-shadow: 0 3px 0 0 #bf6363;
+	box-shadow: 0 3px 0 0 #bf6363;
+}
+
+.pagination__btn_prev:active::before, .pagination__btn_next:active::before {
+	-webkit-box-shadow: 0 2px 0 0 #bf6363;
+	box-shadow: 0 2px 0 0 #bf6363;
+}
+
+.pagination__btn-legend_prev,
+.pagination__btn-legend_next {
+	width: 12px;
+	height: 12px;
+}
+
+.news-share {
+	padding: 20px 0;
+}
+
+.text-subtitle {
+	font-size: 28px;
+}

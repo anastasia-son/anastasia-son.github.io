@@ -1,0 +1,28 @@
+.longread-pan {
+	max-width: 500px;
+}
+
+.longread-pan.longread-pan_on-standard-img {
+	margin-bottom: 180px;
+}
+
+.longread-pan__title {
+	padding-bottom: 32px;
+}
+
+.longread-pan__title.longread-pan__title_h1 {
+	font-size: 36px;
+}
+
+.longread-pan__title.longread-pan__title_h2 {
+	font-size: 30px;
+}
+
+.longread-pan__text {
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.longread-pan__title::after {
+	font-size: 33px;
+}

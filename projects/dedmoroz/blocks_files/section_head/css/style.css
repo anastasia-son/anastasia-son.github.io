@@ -1,0 +1,55 @@
+.section-head {
+	min-height: 100vh;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center center;
+}
+
+.section-head__content {
+	max-width: 960px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.section-head__content {
+		padding-top: 10vw;
+	}
+}
+
+.section-head__title {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	text-align: center;
+	line-height: 1.1;
+	font-weight: bold;
+}
+
+.section-head__title::after {
+	content: "§";
+	font-family: "Iowan Old Style", Georgia, serif;
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	font-weight: normal;
+	-webkit-transform: translateX(-50%) rotate(90deg);
+	-ms-transform: translateX(-50%) rotate(90deg);
+	transform: translateX(-50%) rotate(90deg);
+}
+
+.section-head__text p {
+	margin: 0 0 0.5em;
+}
+
+.section-head__text p:last-child {
+	margin-bottom: 0;
+}

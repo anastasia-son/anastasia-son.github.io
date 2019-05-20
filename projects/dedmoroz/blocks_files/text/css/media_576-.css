@@ -1,0 +1,31 @@
+.section-text {
+	padding-top: 90px;
+	padding-bottom: 280px;
+}
+
+.text {
+	padding-top: 10%;
+	max-width: 546px;
+}
+
+.text__inner {
+	padding: 10px 40px;
+}
+
+.text__inner p {
+	margin: 0 0 40px;
+}
+
+.text__img {
+	padding: 10px 0 40px;
+}
+
+
+.text__title-sm {
+	padding: 10px 100px 10px;
+	font-size: 14px;
+}
+
+.text__title-lg {
+	max-width: 70%;
+}

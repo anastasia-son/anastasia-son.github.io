@@ -1,0 +1,16 @@
+.slider__bg {
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+}
+.slider__slide {
+	min-height: 400px;
+}
+
+.logo-img {
+	width: 90vw;
+	max-width: 400px;
+}
+
+.logo-text {
+	font-size:  calc(10px + 1vw);
+}

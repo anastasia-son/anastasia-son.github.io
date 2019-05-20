@@ -1,0 +1,14 @@
+.other-news__title {
+	font-size: 52px;
+}
+
+.news__item-title {
+	font-size: 26px;
+}
+.news__item-img.news__item-img_other {
+	padding-top: 34%;
+}
+
+.news__item-content.news__item-content_other {
+	padding-top: 34%;
+}

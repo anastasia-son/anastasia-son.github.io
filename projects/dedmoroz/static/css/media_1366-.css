@@ -1,0 +1,19 @@
+.container-head {
+	padding: 85px 15px 60px;
+
+}
+
+.text-title {
+	font-size: 48px;
+}
+
+.text-intro::before {
+	font-size: 45px;
+}
+.text-date {
+	margin-top: 40px;
+}
+
+.text-intro {
+	font-size: 18px;
+}

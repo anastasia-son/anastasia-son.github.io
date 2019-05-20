@@ -1,0 +1,214 @@
+.other-news__title {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	text-align: center;
+	font-weight: normal;
+}
+
+.other-news {
+	position: relative;
+	z-index: 2;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+}
+
+.news-list.news-list_other {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 1920px;
+	margin: 0 auto;
+	list-style: none;
+	padding: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+.news__item.news__item_other {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 5px;
+}
+
+.news__item-inner {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-decoration: none;
+	color: inherit;
+	outline: 0;
+}
+
+
+
+
+
+.news__item-img {
+	position: relative;
+	overflow: hidden;
+
+}
+
+.news__item-img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0);
+
+	-webkit-transition: all 0.5s linear;
+
+	-o-transition: all 0.5s linear;
+
+	transition: all 0.5s linear;
+}
+
+.news__item-inner:hover .news__item-img::after, .news__item-inner:focus .news__item-img::after {
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.news__item-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-webkit-transition: blur 0.5s linear, -webkit-transform 0.5s ease-in;
+	transition: blur 0.5s linear, -webkit-transform 0.5s ease-in;
+	-o-transition: blur 0.5s linear, transform 0.5s ease-in;
+	transition: blur 0.5s linear, transform 0.5s ease-in;
+	transition: blur 0.5s linear, transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+
+}
+
+.news__item-content.news__item-content_other {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	background-color: #fff;
+	position: relative;
+}
+
+.news__item-content-inner.news__item-content-inner_other {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
+
+
+.news__item-content::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 14px solid #fff;
+}
+
+.news__item-inner:hover .news__item-img img, .news__item-inner:focus .news__item-img img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.news__item-img img {
+		-o-object-fit: none;
+		object-fit: none;
+		height: auto;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.news__item-inner:hover .news__item-img img, .news__item-inner:focus .news__item-img img {
+		-webkit-transform: scale(1.05) translateY(-50%);
+		-ms-transform: scale(1.05) translateY(-50%);
+		transform: scale(1.05) translateY(-50%);
+	}
+}
+
+.news__item-img-text {
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	padding: 20px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin: 0;
+	opacity: 0;
+
+	-webkit-transition: opacity 0.4s ease-in-out 0.1s, letter-spacing 0.5s linear 0.1s;
+	-o-transition: opacity 0.4s ease-in-out 0.1s, letter-spacing 0.5s linear 0.1s;
+	transition: opacity 0.4s ease-in-out 0.1s, letter-spacing 0.5s linear 0.1s;
+}
+
+.news__item_large .news__item-img-text {
+	font-size: 26px;
+}
+
+
+.news__item-inner:hover .news__item-img-text, .news__item-inner:focus .news__item-img-text {
+	opacity: 1;
+	letter-spacing: 0.4em;
+}
+
+.news__item-date {
+	display: block;
+	text-align: center;
+	padding: 0;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.news__item-title {
+	margin: 0;
+	font-weight: normal;
+	line-height: 1.4;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	text-align: center;
+	overflow: hidden;
+}

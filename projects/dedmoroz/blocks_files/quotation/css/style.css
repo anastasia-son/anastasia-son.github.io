@@ -1,0 +1,42 @@
+/*Цитата*/
+.quotation {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	line-height: 1.4;
+	font-style: italic;
+}
+.quotation p {
+	margin: 0 0 0.5em;
+}
+.quotation p:last-child {
+	margin-bottom: 0;
+}
+
+.quotation__footer {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Lucida Grande', sans-serif;
+	font-weight: 400;
+}
+.quotation__footer cite {
+}
+.quotation__author-name {
+	text-transform: uppercase;
+	font-style: normal;
+	letter-spacing: 0.05em;
+}
+
+.quotation__author-title {
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	color: #999999;
+}
+.quotation__main {
+	position: relative;
+}
+
+.quotation__author-photo img {
+	display: block;
+	max-width: 100%;
+	border-radius: 50%;
+}
+/*END Цитата*/
+

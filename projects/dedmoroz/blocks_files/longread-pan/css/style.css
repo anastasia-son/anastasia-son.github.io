@@ -1,0 +1,42 @@
+.longread-pan {
+	position: relative;
+	z-index: 11;
+	text-align: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.longread-pan {
+		padding-top: 10vw;
+	}
+	.longread-pan.longread-pan_on-standard-img  {
+		padding-top: 4vw;
+	}
+}
+
+
+
+.longread-pan__title {
+	position: relative;
+	margin-top: 0;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+.longread-pan__text {
+	margin: 0;
+	letter-spacing: 0.03em;
+	font-weight: 200;
+}
+
+.longread-pan__title::after {
+	content: "§";
+	font-family: "Iowan Old Style", Georgia, serif;
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	font-weight: normal;
+	-webkit-transform: translateX(-50%) rotate(90deg);
+	-ms-transform: translateX(-50%) rotate(90deg);
+	transform: translateX(-50%) rotate(90deg);
+}

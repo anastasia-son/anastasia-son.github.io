@@ -1,0 +1,33 @@
+.header__section-item {
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+}
+
+.header__section-list {
+	margin-left: -1.5vw;
+	margin-right: -1.5vw;
+}
+
+.header__section-list {
+	padding: 40px 20px;
+}
+
+.header__section-title {
+	font-size: 24px;
+}
+
+.header__section-title-content {
+	padding-bottom: 20px;
+}
+
+.header__links-list {
+	padding: 15px 0;
+	font-size: 15px;
+}
+
+.header__section-title {
+	padding-left: 16px;
+}
+.header__link {
+	padding: 7px 16px 9px;
+}

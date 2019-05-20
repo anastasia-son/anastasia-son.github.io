@@ -1,0 +1,81 @@
+.section-poll {
+	padding: 34px 0;
+}
+
+.poll__container {
+	padding: 55px 100px;
+}
+
+.poll__title {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.poll__title.poll__title_size_lg {
+	font-size: 32px;
+}
+
+.poll__label {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.poll__result {
+	font-size: 60px;
+}
+
+.poll__btn-wrapper {
+	padding: 36px 0 0;
+}
+
+.poll__description {
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+.poll__description.poll__description_final {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.poll__question {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.poll__variants-item {
+	padding: 13px 0;
+}
+
+.poll__variants-stats {
+	width: 70px;
+	margin-left: 20px;
+	line-height: 1.2;
+}
+
+.poll__variants-stats svg {
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+}
+
+.poll__final-header {
+	padding: 10px 0 130px;
+}
+
+.poll__result-bar {
+	height: 35px;
+}
+
+.poll__result-title {
+	margin-bottom: 12px;
+}
+
+.poll__result-title-stats,
+.poll__result-total-stats {
+	font-size: 14px;
+}
+
+.poll.poll_final_bg {
+	padding: 100px 0 150px;
+}

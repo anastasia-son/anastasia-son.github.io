@@ -1,0 +1,12 @@
+/*Баннерный блок*/
+.news-banner {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.news-banner__photo.news-banner__photo_only img {
+	display: block;
+	width: 100%;
+}
+
+/*END Баннерный блок*/

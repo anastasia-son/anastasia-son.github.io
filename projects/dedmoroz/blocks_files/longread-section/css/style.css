@@ -1,0 +1,106 @@
+.longread-section {
+	min-height: 100vh;
+	position: relative;
+}
+
+
+
+
+.longread-section.longread-section_pan {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 100px 15px 30px;
+}
+
+
+.longread-section__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 0 0;
+}
+
+
+
+.longread-section__bg_fixed img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.longread-section__bg_scrollable {
+	z-index: 10;
+}
+
+.longread-section__bg_scrollable img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+
+.longread-section__bg.__longread-has-content.__sticky-top {
+	top: 0;
+	bottom: auto;
+	height: 100vh;
+}
+
+.longread-section__bg.__longread-has-content.__sticky-centered {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+}
+
+
+.longread-section__bg.__longread-has-content.__sticky-bottom {
+	top: auto;
+	bottom: 0;
+	height: 100vh;
+}
+
+
+
+/*For IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	.longread-section__bg img {
+		display: none!important;
+	}
+
+	.longread-section__bg {
+		background-size: cover !important;
+	}
+
+	.longread-section__bg_fixed {
+		background-attachment: fixed;
+	}
+
+}
+

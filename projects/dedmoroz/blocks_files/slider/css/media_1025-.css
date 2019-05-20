@@ -1,0 +1,17 @@
+.slider__slide {
+	min-height: 700px;
+}
+
+.logo-text {
+	font-size:  calc(10px + 0.73vw);
+	margin-bottom: 30px;
+}
+
+.logo-img {
+	width: auto;
+	max-width: 100%;
+}
+
+.slider__bg  {
+	background-attachment: fixed;
+}

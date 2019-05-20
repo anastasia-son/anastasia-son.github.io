@@ -1,0 +1,31 @@
+.section-text {
+	padding: 150px 100px 400px;
+}
+
+.text {
+	max-width: 960px;
+	min-height: 500px;
+}
+
+.text::after {
+	top: 93%;
+}
+.text__title-sm {
+	padding: 10px 170px 10px;
+}
+
+.text__title-lg {
+	font-size: 40px;
+	padding-bottom: 90px;
+}
+.text__title-lg::after {
+	font-size: 45px;
+	bottom: 22px;
+}
+
+.text__content::after {
+	bottom: -170px;
+	width: 179px;
+	height: 168px;
+}
+

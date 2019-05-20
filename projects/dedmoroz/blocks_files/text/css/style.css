@@ -1,0 +1,125 @@
+.section-text {
+	position: relative;
+
+}
+
+.text {
+	position: relative;
+	margin: 0 auto;
+}
+
+.text__container {
+	position: relative;
+	z-index: 3;
+	background-color: #fff;
+}
+
+.text__container.text__container_text-header {
+	margin: 0 auto;
+}
+
+.text::before {
+	content: '';
+	position: absolute;
+	left: -0.7%;
+	right: -0.7%;
+	top: 0;
+	padding-top: 44%;
+	background-image: url('../images/text_corners_top.svg');
+	background-size: contain;
+
+	background-repeat: no-repeat;
+}
+
+
+.text::after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	left: -5.6%;
+	right: -7.3%;
+	padding-top: 64%;
+	background-image: url('../images/text_corners_bottom.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.text__header {
+	position: relative;
+	text-align: center;
+}
+.text__header::before {
+	content: '';
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background-color: #ffffff;
+
+}
+
+.text__inner {
+	position: relative;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.text__content {
+	margin-top: -2px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.text__content::after {
+	content: '';
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-image: url('../images/text_seal.png');
+}
+
+
+.text__title-sm {
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.16em;
+
+}
+.text__title-lg {
+	position: relative;
+	z-index: 5;
+	font-weight: normal;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+}
+
+.text__title-lg::after {
+	content: '§';
+	font-family: 'Iowan Old Style', 'Georgia', serif;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(90deg);
+	-ms-transform: translateX(-50%) rotate(90deg);
+	transform: translateX(-50%) rotate(90deg);
+}
+
+
+.text__img img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}

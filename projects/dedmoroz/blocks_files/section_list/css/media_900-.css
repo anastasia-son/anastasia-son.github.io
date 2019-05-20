@@ -1,0 +1,30 @@
+.section-list__item-content {
+	padding: 70px;
+}
+
+.section-list__item-content-inner {
+	max-width: 310px;
+}
+
+
+.section-list__item-title {
+	font-size: 40px;
+}
+
+.section-list__item-desc {
+	padding: 16px 0 20px;
+	font-size: 14px;
+}
+
+
+.section-list__item-link::after {
+	width: 70px;
+	margin-left: 15px;
+}
+
+
+
+.section-list__item-link:hover::after,
+.section-list__item-link:focus::after {
+	width: 140px;
+}

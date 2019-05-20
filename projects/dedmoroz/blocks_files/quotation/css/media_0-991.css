@@ -1,0 +1,26 @@
+.quotation {
+	font-size: 22px;
+	padding: 20px 0;
+}
+
+.longread__column .quotation {
+	padding: 14px 0;
+	margin-bottom: 5px;
+}
+
+.quotation__footer {
+	margin-top: 28px;
+	font-size: 14px;
+}
+
+.longread__column .quotation__footer {
+	margin-top: 15px;
+}
+
+.quotation__author-photo {
+	width: 130px;
+	height: 130px;
+	margin: 0 auto 20px;
+}
+
+

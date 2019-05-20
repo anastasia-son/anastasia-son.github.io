@@ -1,0 +1,22 @@
+.news__item {
+	width: 100%;
+}
+
+.news__item-content {
+	padding: 25px 15px;
+}
+
+.news__item-img {
+	padding-top: 68%;
+}
+
+.news__item-title {
+	font-size: 20px;
+}
+
+.news__item-date {
+	margin-bottom: 10px;
+}
+.news__item {
+	padding: 10px;
+}

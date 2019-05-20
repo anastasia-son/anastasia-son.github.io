@@ -1,0 +1,22 @@
+
+.news-list {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.news__item {
+	padding: 10px;
+}
+
+
+.news__item-title {
+	font-size: 23px;
+}
+
+.news__item_small {
+	width: 33.33%;
+}
+
+.news__item-img {
+	padding-top: 43.4%;
+}

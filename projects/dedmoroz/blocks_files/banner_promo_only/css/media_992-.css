@@ -1,0 +1,11 @@
+.news-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.longread__column .news-banner {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+

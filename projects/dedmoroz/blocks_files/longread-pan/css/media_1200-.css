@@ -1,0 +1,25 @@
+.longread-pan.longread-pan_on-standard-img {
+	margin-bottom: 300px;
+}
+
+
+.longread-pan__title {
+	padding-bottom: 60px;
+}
+
+.longread-pan__title.longread-pan__title_h1 {
+	font-size: 65px;
+}
+
+.longread-pan__title.longread-pan__title_h2 {
+	font-size: 50px;
+}
+
+.longread-pan__text {
+	margin-top: 24px;
+	font-size: 20px;
+}
+
+.longread-pan__title::after {
+	font-size: 48px;
+}

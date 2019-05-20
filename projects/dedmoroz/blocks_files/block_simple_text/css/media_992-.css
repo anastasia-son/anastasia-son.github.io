@@ -1,0 +1,8 @@
+.simple-text {
+	padding: 20px 0;
+	font-size: 16px;
+}
+
+.longread__column .simple-text {
+	padding: 16px 0;
+}

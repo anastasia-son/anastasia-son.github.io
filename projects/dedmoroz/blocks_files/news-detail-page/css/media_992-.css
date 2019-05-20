@@ -1,0 +1,9 @@
+.news-detail {
+	margin-top: -9vw;
+}
+
+.news-detail.news-detail_custom-img {
+	margin-top: 0;
+	padding-top: 50px;
+}
+

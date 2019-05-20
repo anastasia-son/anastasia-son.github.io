@@ -1,0 +1,22 @@
+.longread-section_has-columns .longread-section__bg,
+.longread-section_has-columns .longread-section__bg.longread-section__bg_fixed,
+.longread-section_has-columns .longread-section__bg.longread-section__bg_scrollable,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-top,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-bottom,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-centered {
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 380px;
+}
+
+.longread-section_has-columns .longread-section__bg img,
+.longread-section_has-columns .longread-section__bg.longread-section__bg_fixed img,
+.longread-section_has-columns .longread-section__bg.longread-section__bg_scrollable img,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-top img,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-bottom img,
+.longread-section_has-columns .longread-section__bg.__longread-has-content.__sticky-centered img {
+	position: absolute;
+}

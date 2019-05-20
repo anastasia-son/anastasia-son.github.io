@@ -1,0 +1,13 @@
+.container.container_longread-intersection {
+	max-width: 960px;
+	width: 70%;
+}
+
+.longread-intersection {
+	padding: 65px 0;
+}
+
+.longread-intersection__title {
+	padding-bottom: 50px;
+}
+

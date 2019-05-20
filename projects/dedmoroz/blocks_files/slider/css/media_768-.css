@@ -1,0 +1,15 @@
+.logo {
+	padding: 15px 70px 15px 133px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url('../images/logo_lights.png');
+}
+.logo-text {
+	font-size:  calc(10px + 1vw);
+}
+
+.logo-img {
+	width: 70vw;
+	max-width: 600px;
+}

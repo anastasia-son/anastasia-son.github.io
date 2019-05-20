@@ -1,0 +1,19 @@
+.subsection-head {
+	padding: 74px 0 50px;
+}
+
+.subsection-head__content {
+	font-size: 18px;
+}
+
+.subsection-head__title {
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+
+.subsection-head__text {
+	margin-top: 16px;
+}
+.subsection-head__title::after {
+	font-size: 33px;
+}

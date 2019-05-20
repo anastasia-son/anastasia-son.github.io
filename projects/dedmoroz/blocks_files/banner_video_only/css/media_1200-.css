@@ -1,0 +1,12 @@
+.news-banner {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.news-banner__video.news-banner__video_only {
+	padding-right: 0;
+}
+.longread__column .news-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

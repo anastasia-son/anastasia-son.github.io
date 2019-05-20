@@ -1,0 +1,12 @@
+.section-head__content {
+	font-size: 26px;
+}
+.section-head__title {
+	padding-bottom: 60px;
+	font-size: 68px;
+
+}
+
+.section-head__title::after {
+	width: 80px;
+}

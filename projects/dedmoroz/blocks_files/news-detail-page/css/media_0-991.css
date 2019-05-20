@@ -1,0 +1,10 @@
+.news-detail {
+	margin-top: -100px;
+	padding-bottom: 20px;
+}
+
+.news-detail.news-detail_custom-img {
+	margin-top: 0;
+	padding-top: 10px;
+}
+

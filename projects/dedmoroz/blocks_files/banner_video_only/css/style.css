@@ -1,0 +1,23 @@
+.news-banner {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.news-banner__video.news-banner__video_only {
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.news-banner__video iframe {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+.news-banner__video.news-banner__video_only iframe {
+	width: 100%;
+}

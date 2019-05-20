@@ -1,0 +1,32 @@
+.section-text {
+	padding-top: 80px;
+	padding-bottom: 170px;
+}
+
+.text {
+	padding-top: 40px;
+	max-width: 320px;
+}
+
+.text__inner {
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+.text__inner p {
+	margin: 0 0 20px;
+}
+
+.text__img {
+	padding: 10px 0 20px;
+}
+
+
+.text__title-sm {
+	padding: 5px 70px 8px;
+	font-size: 11px;
+}
+
+.text__content::after {
+	bottom: -100px;
+}

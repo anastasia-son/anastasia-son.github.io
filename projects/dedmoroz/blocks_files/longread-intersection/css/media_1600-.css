@@ -1,0 +1,13 @@
+.longread-intersection {
+	padding: 126px 0;
+	font-size: 20px;
+}
+
+.longread-intersection__title {
+	padding-bottom: 74px;
+	font-size: 42px;
+}
+
+.longread-intersection__title::after {
+	font-size: 50px;
+}

@@ -1,0 +1,13 @@
+.longread__content {
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.longread__column {
+	width: 100%;
+	max-width: 500px;
+	padding: 26px 0;
+	background-color: rgba(255,255,255,0.9);
+}

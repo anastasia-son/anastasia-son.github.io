@@ -1,0 +1,29 @@
+.section-text {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.text::after {
+	top: 99.5%;
+}
+
+.text__title-lg {
+	font-size: 30px;
+	padding-bottom: 44px;
+}
+
+
+.text__title-lg::after {
+	font-size: 35px;
+	bottom: 0;
+}
+
+.text__content::after {
+	bottom: -120px;
+	width: 120px;
+	height: 110px;
+}
+
+
+

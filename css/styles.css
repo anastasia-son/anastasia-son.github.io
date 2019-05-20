@@ -494,7 +494,10 @@ p {
     font-size: 1em;
 }
 .main-info {
-    padding: 1.5rem 0 5.5rem;
+    padding: 1.5rem 0 3.5rem;
+}
+.portfolio-section {
+    padding-top: 2.5rem;
 }
 
 .main-tagline {
@@ -574,7 +577,7 @@ p {
 
 .portfolio-elem-desc {
     font-size: 0.9em;
-    margin: 0 0 0.5em;
+    margin: 0.5em 0 0.5em;
 }
 
 .caption {
@@ -586,7 +589,7 @@ p {
 
 .protfolio-elem-date {
     display: block;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 100;
 }
 
@@ -1021,7 +1024,7 @@ p {
 
     .column {
         width: 90%;
-        max-width: 290px;
+        max-width: 360px;
     }
 
     .portfolio-elem {

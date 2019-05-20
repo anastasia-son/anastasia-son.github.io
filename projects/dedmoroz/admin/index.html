@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	<!--Общие стили сайта-->
+	<!--Для всех страниц и блоков сайта-->
+	<link rel="stylesheet" href="../static/css/styles.css">
+
+	<!--Для всех страниц и блоков сайта  0-991 -->
+	<link media="screen and (max-width:991px)" rel="stylesheet" href="../static/css/media_0-991.css">
+
+	<!--Для всех страниц и блоков сайта 992- -->
+	<link media="screen and (min-width:992px)" rel="stylesheet" href="../static/css/media_992-.css">
+
+
+	<!--Стили админки-->
+	<link rel="stylesheet" href="css/admin_styles.css">
+	<link rel="stylesheet" href="css/admin_media.css">
+
+
+	<script src="../static/libs/jquery-2.1.3.min.js"></script>
+	<!--Скрипт админки-->
+	<script src="js/admin_script.js"></script>
+
+
+	<title>Admin</title>
+
+
+</head>
+<body>
+
+
+<div class="admin">
+	<div class="admin-wrapper">
+
+
+		<header class="admin-header">
+			<div class="account-panel">
+				<ul class="account-panel__list">
+					<li class="account-panel__item">
+						<a href="" class="btn account-panel__link account-panel__link_logout">
+							Выйти
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="admin-inner">
+
+
+			<nav class="admin-left">
+
+				<h2 class="admin-left__title">
+
+					<span class="admin-left__title-content">Дед Мороз</span>
+				</h2>
+
+				<ul class="admin-left__list">
+
+					<li class="admin-left__item">
+						<a class="admin-left__link" href="#"> Назад</a>
+					</li>
+
+					<li class="admin-left__item">
+						<a class="admin-left__link admin-left__link_current" href="#">Управление</a>
+
+
+						<ul class="admin-left__list_inner">
+							<li class="admin-left__item_inner">
+								<a class="admin-left__link_inner" href="#">Текстовые блоки</a>
+							</li>
+
+
+							<li class="admin-left__item_inner">
+								<a class="admin-left__link_inner admin-left__link_inner-current" href="#">Цитаты</a>
+							</li>
+
+							<li class="admin-left__item_inner">
+								<a class="admin-left__link_inner" href="#">Картинки</a>
+							</li>
+
+
+							<li class="admin-left__item_inner">
+								<a class="admin-left__link_inner" href="#">Изображения</a>
+							</li>
+						</ul>
+
+					</li>
+
+
+					<li class="admin-left__item">
+						<a class="admin-left__link" href="#">Управление 2</a>
+					</li>
+
+
+					<li class="admin-left__item">
+						<a class="admin-left__link" href="#">Управление 3</a>
+					</li>
+
+				</ul>
+
+
+			</nav>
+
+
+			<form class="admin-right" action="">
+
+
+				<div class="landing-page-edit-form-content">
+
+					<div class="landing-page-edit-form-tabs">
+
+						<button type="button" class="landing-page-edit-form-one-tab __active" data-tab-id="common">
+							Общие параметры
+						</button>
+
+
+						<button type="button" class="landing-page-edit-form-one-tab" data-tab-id="seo">
+							SEO настройки
+						</button>
+					</div>
+
+
+					<div class="landing-page-edit-form-tabs-cont">
+
+
+						<ul class="admin-breadcrumbs">
+							<li class="admin-breadcrumbs__item">
+								<a href="" class="admin-breadcrumbs__link">Структура</a>
+							</li>
+							<li class="admin-breadcrumbs__item">
+								<a href="" class="admin-breadcrumbs__link">Главная страница</a>
+							</li>
+							<li class="admin-breadcrumbs__item">
+								<span class="admin-breadcrumbs__link">Дед мороз</span>
+							</li>
+						</ul>
+
+
+						<h1 class="admin-main-title">Дед Мороз</h1>
+
+
+						<div class="landing-page-edit-form-one-tab-cont __active" data-tab-id="common">
+
+							<!-- обязательный родитель для admin-col-1, admin-col-2 и так далее-->
+							<div class="cols-container cols-container_sm">
+
+								<!--Колонка 1-->
+								<div class="admin-col-7">
+
+
+									<fieldset class="admin-fieldset">
+
+										<legend class="admin-fieldset__legend">Заголовок формы</legend>
+
+
+										<div class="landing-page-edit-form-common">
+											<div class="landing-page-sys-node-name">
+
+												<!--Элемент node-->
+												<div class="input-row">
+													<label>
+														<span class="field-name">Название</span>
+														<input type="text"  id="node_sys_name"
+															   name="sys_name"
+															   value="" placeholder="Название">
+													</label>
+												</div>
+
+											</div>
+
+
+											<div class="landing-page-sys-node-date">
+
+												<!--Элемент node-->
+												<div class="input-row error">
+													<label>
+														<span class="field-name">Дата</span>
+														<input type="date" class="error" id="node_sys_date"
+															   name="sys_date" placeholder=""
+															   value="">
+													</label>
+													<div class="error-text">Не заполнено обязательное поле: введите дату в формате dd-mm-yyyy Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro. </div>
+												</div>
+											</div>
+										</div>
+
+										<div class="landing-page landing-page-section">
+											<div class="landing-page-section-node-description">
+
+												<div class="input-row">
+													<label>
+														<span class="field-name">Ключевые слова</span>
+														<input type="text" id="node_description" name="description"
+															   value="" placeholder="Ключевые слова">
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="input-row">
+											<label>
+											<span class="field-name">
+												Выберите
+											</span>
+												<select name="" id="">
+													<option value="">Работает</option>
+													<option value="">Не работает</option>
+													<option value="">На паузе</option>
+
+												</select>
+											</label>
+										</div>
+
+
+										<div class="input-row">
+											<label>
+											<span class="field-name">
+												Описание
+											</span>
+												<textarea name="" id="" placeholder="Описание"></textarea>
+											</label>
+										</div>
+
+
+									</fieldset>
+
+
+									<div class="cols-container">
+
+										<div class="admin-col-6">
+
+											<fieldset class="admin-fieldset">
+
+												<legend class="admin-fieldset__legend"> Множественный выбор</legend>
+
+												<div class="input-row">
+													<div class="admin-checkbox">
+														<input id="checkbox-title" type="checkbox">
+														<label for="checkbox-title"> Одна строка</label>
+													</div>
+
+													<div class="admin-checkbox">
+														<input id="checkbox-intro" type="checkbox">
+														<label for="checkbox-intro"> Текст в две строки, когда много
+															текста </label>
+													</div>
+												</div>
+
+
+											</fieldset>
+
+										</div>
+
+
+										<div class="admin-col-6">
+
+											<fieldset class="admin-fieldset">
+												<legend class="admin-fieldset__legend"> Выбор</legend>
+
+												<div class="input-row">
+
+													<div class="admin-radio">
+														<input id="radio-var-1" type="radio" name="radio" value="1">
+														<label for="radio-var-1"> <span class="admin-radio__box"
+																						aria-hidden="true"></span>
+															Вариант 1 </label>
+													</div>
+
+
+													<div class="admin-radio">
+														<input id="radio-var-2" type="radio" name="radio" value="1">
+														<label for="radio-var-2"> <span class="admin-radio__box"
+																						aria-hidden="true"></span>
+															Вариант 2 </label>
+													</div>
+
+
+													<div class="admin-radio">
+														<input id="radio-var-3" type="radio" name="radio" value="1">
+														<label for="radio-var-3"> <span class="admin-radio__box"
+																						aria-hidden="true"></span>
+															Вариант 3 Текст в две строки, когда много текста </label>
+													</div>
+												</div>
+
+											</fieldset>
+										</div>
+
+									</div>
+
+
+								</div>
+
+
+								<!--Колонка 2-->
+								<div class="admin-col-5">
+
+									<fieldset class="admin-fieldset">
+
+										<legend class="admin-fieldset__legend">Маленькая картинка</legend>
+
+										<div class="input-row error">
+
+											<div class="field-name">Требуемый размер: xxx x xxx пикселей</div>
+											<div >
+												<div class="picture-block node_preview_picture error">
+													<div class="img">
+														<span class="img-cont">
+															<img alt="нет изображения"
+																 src="img/empty_img.png">
+															<span class="img-over" data-role="over-block">
+																<span class="img-over-text">Будет удалено</span>
+															</span>
+														</span>
+													</div>
+													<div data-role="caption-block" class="picture-block_filename">
+														filename.jpg
+													</div>
+													<div class="error-text">Изображение не соответствует трeбуемому размеру</div>
+
+													<div class="form-inside-submit-line">
+
+														<div class="btns-inline">
+															<a href="javascript:void(0);" data-target="preview_picture"
+															   data-role="open-image"
+															   class="btn btn_theme_gray btn_size_normal btn-edit">Изменить</a>
+
+
+															<a href="javascript:void(0);" data-target="preview_picture"
+															   data-role="del-image"
+															   class="btn btn_theme_gray btn_size_normal btn-delete">Удалить</a>
+														</div>
+													</div>
+												</div>
+												<input type="file" name="preview_picture" style="display: none;"
+													   data-role="image-file-input">
+												<input type="hidden" name="preview_picture_del" value="N"
+													   data-role="image-del-input">
+											</div>
+											<script>
+                                                new DM.Base.Node.ImageEdit({
+                                                    id: 'dm_node_preview_picture'
+                                                });
+											</script>
+										</div>
+
+
+									</fieldset>
+
+
+									<fieldset class="admin-fieldset">
+
+										<legend class="admin-fieldset__legend">Большая картинка</legend>
+
+										<div class="input-row">
+											<div class="field-name">Требуемый размер: xxx x xxx пикселей</div>
+											<div>
+												<div class="picture-block node_preview_picture">
+													<div class="img">
+														<span class="img-cont">
+															<img alt="нет изображения"
+																 src="img/empty_img.png">
+															<span class="img-over" data-role="over-block">
+																<span class="img-over-text">Будет удалено</span>
+															</span>
+														</span>
+													</div>
+
+
+
+													<div data-role="caption-block" class="picture-block_filename"></div>
+
+													<div class="form-inside-submit-line">
+														<div class="btns-inline">
+														<a href="javascript:void(0);" data-target="preview_picture"
+														   data-role="open-image"
+														   class="btn btn_theme_gray btn_size_normal btn-edit">Изменить</a>
+
+
+														<a href="javascript:void(0);" data-target="preview_picture"
+														   data-role="del-image"
+														   class="btn btn_theme_gray btn_size_normal btn-delete">Удалить</a>
+														</div>
+													</div>
+												</div>
+												<input type="file" name="preview_picture" style="display: none;"
+													   data-role="image-file-input">
+												<input type="hidden" name="preview_picture_del" value="N"
+													   data-role="image-del-input">
+											</div>
+											<script>
+                                                new DM.Base.Node.ImageEdit({
+                                                    id: 'dm_node_preview_picture'
+                                                });
+											</script>
+										</div>
+
+
+									</fieldset>
+
+								</div>
+
+
+							</div>
+
+							<div class="cols-container cols-container_m">
+								<div class="admin-col-12">
+
+
+									<div class="admin-fieldset">
+
+										<div class="admin-fieldset__legend">Содержание</div>
+
+										<div class="input-row">
+
+											<div class="admin-checkbox-radio-inline">
+
+
+												<div class="admin-radio">
+													<input id="radio-var-5" type="radio" name="radio2" value="1">
+													<label for="radio-var-5"> <span class="admin-radio__box"
+																					aria-hidden="true"></span>
+														Текст </label>
+												</div>
+
+
+												<div class="admin-radio">
+													<input id="radio-var-6" type="radio" name="radio2" value="1">
+													<label for="radio-var-6"> <span class="admin-radio__box"
+																					aria-hidden="true"></span>
+														HTML </label>
+												</div>
+
+
+												<div class="admin-radio">
+													<input id="radio-var-7" type="radio" name="radio2" value="1"
+														   checked>
+													<label for="radio-var-7"> <span class="admin-radio__box"
+																					aria-hidden="true"></span>
+														Визуальный редактор </label>
+												</div>
+
+
+											</div>
+
+
+											<div class="visual-editor-wrapper">
+												<img src="img/visual_editor.jpg" alt="Визуальный редактор">
+											</div>
+
+										</div>
+
+
+										<div class="form-submit-line">
+
+											<div class="btns-inline">
+												<a href="" class="btn btn_size_normal btn_theme_pink">Сохранить</a>
+
+												<a href="" class="btn btn_size_normal btn_theme_blue">Применить</a>
+
+												<a href="" class="btn btn_size_normal btn_theme_gray">Отменить</a>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+							<div class="cols-container cols-container_m">
+								<div class="admin-col-12">
+
+
+									<fieldset class="admin-fieldset">
+
+										<legend class="admin-fieldset__legend">Структура страницы</legend>
+
+										<div class="input-row">
+
+											<div class="cols-container">
+
+												<div class="admin-col-6">
+
+													<div class="admin-page-blocks">
+														<div class="admin-page-blocks__item">
+															<h3 class="admin-page-blocks__title">
+																Текстовые блоки
+															</h3>
+															<ul class="admin-page-blocks__list">
+																<li class="admin-page-blocks__list-item">
+																	<div class="admin-page-blocks__list-item-inner">
+																		О красоте НГ
+																	</div>
+																</li>
+																<li class="admin-page-blocks__list-item">
+																	<div class="admin-page-blocks__list-item-inner">
+																		История 1
+																	</div>
+																</li>
+																<li class="admin-page-blocks__list-item">
+																	История 2
+																</li>
+															</ul>
+														</div>
+
+
+														<div class="admin-page-blocks__item">
+															<h3 class="admin-page-blocks__title">
+																Цитаты
+															</h3>
+															<ul class="admin-page-blocks__list">
+																<li class="admin-page-blocks__list-item">
+																	<div class="admin-page-blocks__list-item-inner">
+																	Lorem ipsum dolor sit amet, consectetur
+																		adipisicing elit. Eveniet, praesentium!
+																	</div>
+																</li>
+																<li class="admin-page-blocks__list-item">
+																	<div class="admin-page-blocks__list-item-inner">
+																		Санта 2
+																	</div>
+																</li>
+															</ul>
+														</div>
+
+														<div class="admin-page-blocks__item">
+															<h3 class="admin-page-blocks__title">
+																Изображение
+															</h3>
+															<ul class="admin-page-blocks__list">
+																<li class="admin-page-blocks__list-item admin-page-blocks__list-item_img">
+
+																	<div class="admin-page-blocks__list-item-img-inner">
+																		<img src="img/img_thumbnail.jpg" alt="">
+
+																		Lorem ipsum dolor sit amet
+																	</div>
+																</li>
+																<li class="admin-page-blocks__list-item">
+																	<div class="admin-page-blocks__list-item-inner">
+																		Резиденция
+																	</div>
+																</li>
+															</ul>
+														</div>
+
+													</div>
+
+												</div>
+
+
+												<div class="admin-col-6">
+
+													<div class="admin-page-blocks">
+
+														<ul class="admin-page-blocks__list">
+															<li class="admin-page-blocks__list-item">
+																<div class="admin-page-blocks__list-item-inner">
+																	История 3
+
+																	<a href=""
+																	   class="btn btn_size_small btn_theme_light btn-delete">
+																		Удалить
+																	</a>
+
+																</div>
+															</li>
+															<li class="admin-page-blocks__list-item admin-page-blocks__list-item_img">
+
+																<div class="admin-page-blocks__list-item-img-inner">
+																	<img src="img/img_thumbnail.jpg" alt="">
+
+																	Олени
+
+																	<a href=""
+																	   class="btn btn_size_small btn_theme_light btn-delete">
+																		Удалить
+																	</a>
+																</div>
+															</li>
+
+
+															<li class="admin-page-blocks__list-item">
+																<div class="admin-page-blocks__list-item-inner">
+																	История 2
+
+
+																	<a href=""
+																	   class="btn btn_size_small btn_theme_light btn-delete">
+																		Удалить
+																	</a>
+																</div>
+															</li>
+														</ul>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+									</fieldset>
+
+
+								</div>
+							</div>
+
+
+						</div>
+
+
+						<div class="landing-page-edit-form-one-tab-cont" data-tab-id="seo">
+							<div class="cols-container cols-container_sm">
+
+
+
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+					<div class="landing-page-edit-form-submit-line">
+
+
+						<div class="btns-inline">
+							<a href="" class="btn btn_size_normal btn_theme_blue">Посмотреть</a>
+
+							<a href="" class="btn btn_size_normal btn_theme_pink">Применить</a>
+						</div>
+
+
+					</div>
+
+
+				</div>
+
+			</form>
+
+		</main>
+
+		<footer class="admin-footer">
+			© 2006-2019, ООО Почта Деда Мороза.
+		</footer>
+
+
+	</div>
+</div>
+
+
+
+<aside class="sidebar-nav">
+	<ul class="sidebar-nav-list">
+		<li class="sidebar-nav-item">
+			<a class="sidebar-nav-back" href="https://anastasia-son.github.io#portfolio" title="Назад к портфолио"></a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../longread.html" title="Длинная статья">1</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../index.html" title="Главная страница">2</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../news_list.html" title="Список новостей">3</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../news_detail.html" title="Детальная новости">4</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../section.html" title="Раздел">5</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../subsection.html" title="Подраздел">6</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="../text.html" title="Текст">7</a>
+		</li>
+		<li class="sidebar-nav-item sidebar-nav-item_current">
+			<a href="index.html" title="Админка">8</a>
+		</li>
+
+	</ul>
+</aside>
+</body>
+</html>

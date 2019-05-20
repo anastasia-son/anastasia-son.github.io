@@ -1,0 +1,24 @@
+.simple-text {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	line-height: 1.6;
+	font-weight: 300;
+}
+.simple-text p {
+	margin: 0 0 1.2em;
+}
+
+
+.simple-text a {
+	color: #D34928;
+}
+
+.simple-text a:hover {
+	text-decoration: none;
+}
+
+.simple-text p:last-child {
+	margin-bottom: 0;
+}
+
+

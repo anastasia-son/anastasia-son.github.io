@@ -1,0 +1,20 @@
+.longread-pan__title {
+	padding-bottom: 72px;
+}
+
+.longread-pan__title.longread-pan__title_h1 {
+	font-size: 70px;
+}
+
+.longread-pan__title.longread-pan__title_h2 {
+	font-size: 60px;
+}
+
+.longread-pan__text {
+	margin-top: 30px;
+	font-size: 22px;
+}
+
+.longread-pan__title::after {
+	font-size: 52px;
+}

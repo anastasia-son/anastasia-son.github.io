@@ -1,0 +1,29 @@
+.other-news__title {
+	padding: 20px 10px;
+	font-size: 30px;
+}
+
+.news-list.news-list_other  {
+	max-width: 600px;
+}
+
+.news__item {
+	width: 100%;
+}
+
+.news__item-content-inner.news__item-content-inner_other {
+	padding: 30px 15px;
+}
+
+.news__item-img {
+	padding-top: 80%;
+}
+
+.news__item-title {
+	font-size: 20px;
+}
+
+.news__item-date {
+	margin-bottom: 10px;
+	font-size: 11px;
+}

@@ -1,0 +1,37 @@
+.longread-intersection {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+
+.longread-intersection__title {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-weight: normal;
+	font-family: 'Georgia', 'Century Schoolbook L', serif;
+	font-size: 30px;
+}
+
+.longread-intersection__title::after {
+	content: '§';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 36px;
+	font-family: 'Iowan Old Style', 'Georgia', serif;
+	-webkit-transform: translateX(-50%) rotate(90deg);
+	-ms-transform: translateX(-50%) rotate(90deg);
+	transform: translateX(-50%) rotate(90deg);
+}
+
+.longread-intersection__text p {
+	margin-top: 0;
+	margin-bottom: 0.7em;
+}
+
+.longread-intersection__text p:last-child {
+	margin-bottom: 0;
+}

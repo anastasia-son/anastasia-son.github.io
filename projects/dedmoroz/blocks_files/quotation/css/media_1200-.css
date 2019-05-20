@@ -1,0 +1,12 @@
+.quotation {
+	font-size: 26px;
+	padding: 28px 0;
+}
+
+.longread__column .quotation {
+	padding: 20px 0;
+}
+.quotation__footer {
+	font-size: 16px;
+}
+

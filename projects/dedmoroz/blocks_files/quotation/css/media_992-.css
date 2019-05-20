@@ -1,0 +1,29 @@
+.quotation {
+	font-size: 22px;
+	padding: 20px 0;
+}
+
+.longread__column .quotation {
+	padding: 16px 0;
+	margin-bottom: 7px;
+}
+
+.quotation__footer {
+	font-size: 14px;
+	margin-top: 32px;
+}
+
+.longread__column .quotation__footer {
+	margin-top: 20px;
+}
+
+.quotation__author-photo {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	-webkit-transform: translate(-100%, -50%);
+	-ms-transform: translate(-100%, -50%);
+	transform: translate(-100%, -50%);
+	left: -35px;
+	top: 50%;
+}

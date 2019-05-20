@@ -1,0 +1,32 @@
+.news__item_large {
+	width: 50%;
+}
+
+.news__item_small {
+	width: 50%;
+}
+
+.news__item-img {
+	padding-top: 55%;
+}
+
+.news__item-content {
+	padding: 45px 20px;
+}
+
+.news__item-date {
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+.news__item-title {
+	font-size: 20px;
+}
+.news__item {
+	padding: 5px;
+}
+
+.news-list {
+	padding-left: 5px;
+	padding-right: 5px;
+}
