@@ -1,0 +1,236 @@
+.popup {
+	max-width: 522px;
+	margin: 0 auto;
+	padding: 48px;
+	background: #fff;
+}
+.popup__head {
+	position: relative;
+	margin-bottom: 16px;
+}
+.popup__title {
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.popup__info {
+	display: flex;
+	opacity: 0.7;
+	font-size: 12px;
+}
+.popup__info span {
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 8px;
+}
+.popup__close.mfp-close {
+	top: -6px !important;
+	opacity: 1;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/close.svg) no-repeat;
+}
+.popup__close:active {
+	top: -6px;
+}
+.popup__close svg {
+	width: 40px;
+	height: 40px;
+	fill: #373c41;
+}
+.mfp-bg {
+	background: #373c41;
+	opacity: .4;
+}
+.form__row {
+	display: block;
+	position: relative;
+	margin-bottom: 36px;
+}
+.form__label {
+	position: absolute;
+	top: 24px;
+	left: 0;
+	transition: all .2s ease-out;
+	pointer-events: none;
+}
+.form__input input, .form__input textarea {
+	width: 100%;
+	height: 56px;
+	padding: 26px 0 0;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	border-bottom: 2px solid #cecfd0;
+	font-family: "Montserrat", "Trebuchet MS", "Helvetica", sans-serif;
+	transition: border-color 0.5s ease-in-out;
+}
+.form__input textarea {
+	padding: 0;
+    height: auto;
+    min-height: 35px;
+    margin-top: 56px;
+    resize: vertical;
+}
+.form__input input:focus, .form__input textarea:focus {
+	border-color: #5ae6ff;
+}
+.form__input.error, .ga-form-property.error input, .ga-form-property.error textarea {
+	border-color: #cc2c4a;
+}
+.form__row .error_text {
+    font-size: 12px;
+    color: #cc2c4a;
+    line-height: 20px;
+}
+.ga-form-property.error .ga-form-property-input {
+	border: none;
+}
+.form__label._active {
+	top: 15px;
+	font-size: 12px;
+}
+.form__row.comment .form__label {
+    top: 5px;
+}
+.form__row.comment .form__label._active {
+    top: -15px;
+}
+.form__captcha {
+	display: flex;
+	margin-bottom: 40px;
+}
+.form__captcha .form__row {
+	margin: 0px 0 0 12.7%;
+	flex: 2;
+}
+.form__captcha .form__input input {
+	height: 31px;
+	padding-top: 4px;
+	font-size: 12px;
+}
+.form__captcha .form__label {
+	font-size: 12px;
+	top: 10px;
+}
+.form__captcha .form__label._active {
+	top: -6px;
+}
+.form__link {
+	display: inline-block;
+	color: #6ccfe0;
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.form__captcha .form__link {
+	margin-top: 9px;
+}
+.form__agree {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 16px;
+}
+.form__agree a {
+	max-width: 75%;
+	color: #373c41;
+	font-size: 12px;
+	text-decoration: underline;
+	line-height: 20px;
+}
+.form__agree a:hover {
+    text-decoration: none;
+}
+.form__agree input {
+	display: none;
+}
+.ga-form-property.agree.error .checkbox-custom {
+    border-color: #cc2c4a;
+}
+.form__footer .btn {
+	width: 100%;
+	max-width: 248px;
+	height: 56px;
+}
+.checkbox-custom {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: solid 2px #cecfd0;
+	margin: -1px 16px 0 0;
+	background: #fff;
+}
+input[type=checkbox]:checked + .checkbox-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: #5ae6ff;
+	border-radius: 2px;
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+	.mfp-container {
+		padding: 0 !important;
+	}
+	.mfp-content {
+		vertical-align: bottom !important;
+	}
+	.popup {
+		max-width: inherit;
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+	.popup-feedback .form__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.popup-feedback .form__wrapper .form__row:not(:last-child) {
+		width: 48%;
+	}
+	.popup-feedback .form__wrapper .form__row:last-child {
+		width: 100%;
+	}
+	.form__footer {
+		display: flex;
+	}
+	.form__footer .ga-form-property.agree  {
+		order: 2;
+		margin-left: 52px;
+	}
+	.form__captcha .form__row {
+		max-width: 174px;
+		margin-left: 122px;
+	}
+}
+@media(max-width: 767px) {
+	.mfp-container {
+		padding: 0 !important;
+	}
+    .mfp-content, .mfp-wrap {
+        height: 100%;
+        background: #fff;
+    }
+	.popup {
+		max-width: inherit;
+		height: 100%;
+		padding: 32px 16px;
+	}
+	.popup__title {
+		font-size: 16px;
+	}
+	.form__captcha {
+		flex-direction: column;
+	}
+	.form__captcha .form__row {
+		max-width: 209px;
+		margin: 23px 0 0;
+	}
+	.form__footer .btn {
+		max-width: 288px;
+	}
+}

@@ -1,0 +1,277 @@
+.map-section {
+	position: relative;
+	padding: 60px 0 140px;
+	overflow: hidden;
+	height: 720px;
+}
+
+.map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -460px;
+	height: auto!important;
+}
+
+.map::before {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(10, 15, 20, 0.6);
+}
+
+.map-content {
+	position: relative;
+	z-index: 5;
+	color: #fff;
+}
+
+.map-content__title {
+	font-weight: bold;
+	margin: 0 0 167px;
+	display: none;
+	font-size: 24px;
+}
+
+.map-cols__left {
+	display: none;
+}
+
+
+.map-point {
+	margin-bottom: 36px;
+}
+
+.map-point__arrow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+	width: 20px;
+	height: 40px;
+	fill: #fff;
+	-webkit-animation: moveArrow 1.5s infinite ease-in-out;
+	-o-animation: moveArrow 1.5s infinite ease-in-out;
+	animation: moveArrow 1.5s infinite ease-in-out;
+}
+
+.map-point__point {
+	width: 18px;
+	height: 18px;
+	border: 6px solid #5ae6ff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.btn.map__select-loc {
+	margin-bottom: 16px;
+	font-size: 14px;
+	line-height: 1;
+	color: #5ae6ff;
+	font-weight: 600;
+	padding: 0;
+}
+.btn__flex {
+	display: flex;
+	align-items: center;
+}
+.map__select-loc svg {
+	margin-left: 12px;
+	width: 20px;
+	height: 12px;
+	fill: #fff;
+}
+
+.map__where {
+	font-weight: bold;
+	font-size: 32px;
+	margin: 0 0 28px;
+	line-height: 1.2;
+}
+.map__date--desktop {
+	display: none;
+	margin-top: 30px;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.map__date--mobile {
+	display: block;
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.event-info__item  {
+	margin-bottom: 28px;
+}
+
+.event-info__label {
+	line-height: 1;
+	opacity: 0.8;
+	margin: 0 0 10px;
+	font-size: 12px;
+}
+.event-info__data {
+	margin: 0;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.event-info__data a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.event-info__item .btn-arrow {
+	margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+
+	.map-cols {
+		display: flex;
+	}
+
+	.map-cols__left {
+		display: block;
+		width: 39.3%;
+	}
+
+	.map-cols__right {
+		width: 60.69%;
+		padding-left: 40px;
+		flex-shrink: 0;
+	}
+	.map-main-content__inner {
+		position: relative;
+		max-width: 480px;
+		padding-left: 50px;
+	}
+	.map-point {
+		margin-bottom: 0;
+		position: absolute;
+		left: 0;
+		top: -10px;
+
+	}
+	.map__date--mobile {
+		display: none;
+	}
+
+	.map__date--desktop {
+		display: block;
+	}
+	.map__date--desktop span {
+		display: block;
+	}
+
+	.map-section {
+		padding: 83px 0 86px;
+		height: 800px;
+	}
+	.map {
+		margin-top: -126px;
+		margin-left: calc((100% - 76px) * -0.169 + 65px);
+	}
+
+	.map-content__title {
+		display: block;
+	}
+	.map__where {
+		min-height: 96px;
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@media(min-width: 992px) {
+	.map-section {
+		padding-top: 100px;
+		padding-bottom: 60px;
+	}
+	.map-cols__left {
+		width: 100%;
+	}
+
+	.map-cols__right {
+		width: 44.88vw;
+		padding-left: 0;
+	}
+
+	.map-main-content__inner {
+		padding-left: 0;
+		max-width: 495px;
+	}
+	.map-point {
+		left: -65px;
+	}
+	.map {
+		margin-top: -100px;
+		margin-left: calc(-10.24vw - 130px);
+	}
+	.event-info__item .btn-arrow {
+		margin-top: 28px;
+	}
+}
+
+
+
+@-webkit-keyframes moveArrow {
+	0% {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50% {
+		-webkit-transform:translateY(10px);
+		-moz-transform:translateY(10px);
+		-ms-transform:translateY(10px);
+		-o-transform:translateY(10px);
+		transform:translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes moveArrow {
+	0% {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		-ms-transform: translateY(10px);
+		-o-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
