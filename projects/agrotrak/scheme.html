@@ -1,0 +1,3273 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/mCustomScrollbar/jquery.mCustomScrollbar.css">
+
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick.css">
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick-theme.css">
+
+
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+
+	<title>Document</title>
+
+
+</head>
+
+<body class="sticky-footer">
+
+<header class="header">
+
+	<div class="header-top _hide-on-mobile-1201">
+		<div class="container">
+			<h1 class="header-top__legend">Интернет-магазин сельхоззапчастей</h1>
+		</div>
+	</div>
+
+	<div class="header-middle">
+		<div class="container">
+			<div class="header-middle__content">
+
+				<div class="header-middle__item _show-on-mobile-1201">
+					<button class="mobile-menu-btn js-mobile-menu-btn" type="button"
+							aria-label="Открыть или закрыть меню">
+						<span aria-hidden="true" class="mobile-menu-btn__bar"></span>
+					</button>
+				</div>
+
+
+				<a class="header-middle__item header-logo" href="/">
+					<img src="img/logo.svg" alt="Агротрак">
+				</a>
+
+				<div class="header-middle__item _hide-on-mobile-1201">
+					<div class="contact-item contact-item--header">
+						<a class="contact-item__value" href="mailto:shop@agrotrak.ru" aria-label="Электронная почта">
+							<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+								<use xlink:href="#ic-mail"></use>
+							</svg>
+							shop@agrotrak.ru
+						</a>
+
+						<a class="contact-item__legend" href="">
+							Написать нам
+						</a>
+					</div>
+				</div>
+
+				<div class="header-middle__item _hide-on-mobile-1201">
+					<div class="contact-item contact-item--header">
+						<a class="contact-item__value" href="tel:88007001817" aria-label="Телефон">
+							<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+								<use xlink:href="#ic-phone"></use>
+							</svg>
+							8 800 700 18 17
+						</a>
+
+						<a class="contact-item__legend" href="">
+							Заказать обратный звонок
+						</a>
+					</div>
+				</div>
+
+
+				<div class="header-middle__item header-middle__item--boxes">
+					<!--	Если пользователь НЕ авторизован-->
+					<!--
+                   <div class="header-box header-box--user">
+                       <div class="header-box__icon header-box__icon--unauthorized _hide-on-mobile-1201">
+                           <svg aria-hidden="true">
+                               <use xlink:href="#ic-signin"></use>
+                           </svg>
+                       </div>
+                       <div class="header-box__content header-box__content--user">
+                           <p class="header-box__content-line _hide-on-mobile-1201">
+                               <a class="text-link" href="">Регистрация</a>
+                           </p>
+                           <p class="header-box__content-line">
+                               <a class="text-link" href="">Вход</a>
+                           </p>
+                       </div>
+                   </div>
+                   -->
+					<!--		END 	Если пользователь НЕ авторизован-->
+
+
+
+					<!--				Если пользователь авторизован -->
+
+					<div class="header-box header-box--user">
+						<div class="header-box__icon header-box__icon--authorized _hide-on-mobile-1201">
+							<svg aria-hidden="true">
+								<use xlink:href="#ic-signout"></use>
+							</svg>
+						</div>
+						<div class="header-box__content header-box__content--user">
+							<p class="header-box__content-line header-box__content-line--user">
+								<a class="text-link" href="">user name</a>
+							</p>
+							<p class="header-box__content-line _hide-on-mobile-1201">
+								<a class="text-link text-link-gray" href="">Выход</a>
+							</p>
+						</div>
+					</div>
+
+
+					<!--			END 	Если пользователь авторизован-->
+
+					<a href="" class="header-box header-box--cart">
+						<div class="header-box__icon header-box__icon--cart">
+							<svg aria-hidden="true">
+								<use xlink:href="#ic-cart"></use>
+							</svg>
+							<span class="header-box__icon-amount--mobile">
+								23
+							</span>
+						</div>
+						<div class="header-box__content header-box__content--cart _hide-on-mobile-1201">
+							<p class="header-box__content-line header-box__content-line--cart">
+								<span class="header-box__cart-name">товаров:</span>
+								<span class="header-box__cart-value">23</span>
+							</p>
+							<p class="header-box__content-line header-box__content-line--cart">
+								<span class="header-box__cart-name">сумма:</span>
+								<span class="header-box__cart-value header-box__cart-value--price">2 235 ₽</span>
+							</p>
+						</div>
+					</a>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="header-bottom _hide-on-mobile-1201">
+		<div class="container">
+			<nav class="header-bottom__menu">
+
+				<!--ul выносится в компонент-->
+				<ul class="h-menulist unset-list-style">
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Схемы</a>
+					</li>
+
+					<li class="h-menulist__item">
+						<a class="h-menulist__link h-menulist__link--active" href="">О компании</a>
+					</li>
+
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Бренды</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Новости</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Доставка и оплата</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Возврат и гарантия</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Отзывы</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Контакты</a>
+					</li>
+
+				</ul>
+
+
+			</nav>
+
+		</div>
+	</div>
+
+
+	<nav class="mobile-menu js-mobile-menu _show-on-mobile-1201">
+		<ul class="h-menulist unset-list-style">
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Схемы</a>
+			</li>
+
+			<li class="h-menulist__item">
+				<a class="h-menulist__link h-menulist__link--active" href="">О компании</a>
+			</li>
+
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Бренды</a>
+			</li>
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Новости</a>
+			</li>
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Доставка и оплата</a>
+			</li>
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Возврат и гарантия</a>
+			</li>
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Отзывы</a>
+			</li>
+			<li class="h-menulist__item">
+				<a class="h-menulist__link" href="">Контакты</a>
+			</li>
+
+		</ul>
+
+		<a class="mobile-menu__account" href="">
+			<!--			Если авторизован:-->
+
+			<svg aria-hidden="true">
+				<use xlink:href="#ic-signout"></use>
+			</svg>
+			Выйти из учетной записи
+
+			<!--			Если не авторизован: (разные иконки и подпись)-->
+			<!--			<svg aria-hidden="true">-->
+			<!--				<use xlink:href="#ic-signin"></use>-->
+			<!--			</svg>-->
+			<!--			Регистрация-->
+
+		</a>
+
+		<div class="mobile-menu__contact">
+			<div class="contact-item">
+				<a class="contact-item__value" href="mailto:shop@agrotrak.ru" aria-label="Электронная почта">
+					<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+						<use xlink:href="#ic-mail"></use>
+					</svg>
+					shop@agrotrak.ru
+				</a>
+
+				<a class="contact-item__legend" href="">
+					Написать нам
+				</a>
+			</div>
+
+			<div class="contact-item">
+				<a class="contact-item__value" href="tel:88007001817" aria-label="Телефон">
+					<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+						<use xlink:href="#ic-phone"></use>
+					</svg>
+					8 800 700 18 17
+				</a>
+
+				<a class="contact-item__legend" href="">
+					Заказать обратный звонок
+				</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+</header>
+<div class="search">
+	<div class="container">
+		<div class="search-panel">
+			<svg class="search-panel__icon">
+				<use xlink:href="#ic-search"></use>
+			</svg>
+
+
+			<input class="search-panel__input" type="text" placeholder="Артикул, название, детали, модель техники">
+			<button class="search-panel__btn btn btn--theme-primary btn--size-l _hide-on-mobile-1201" type="submit">
+				<span class="btn__text">Найти</span>
+			</button>
+
+			<a class="search-panel__ask--mobile _show-on-mobile-1201" href="" aria-label="Как пользоваться поиском?">
+				<svg aria-hidden="true">
+					<use xlink:href="#ic-ask"></use>
+				</svg>
+			</a>
+
+
+			<div class="search-panel__result" style="display: none;">
+
+				<div class="search-result js-search-result-mCustomScrollbar">
+
+					<article class="search-result__item item-line">
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">2 199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									1220
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									35
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="search-result__item item-line">
+
+
+						<a class="item-line__photo view-photo" href="">
+							<svg class="view-photo__icon" aria-hidden="true">
+								<use xlink:href="#ic-photo"></use>
+							</svg>
+						</a>
+
+						<a class="item-line__code item-code" href="">
+							РСМ-10.02.02.413А
+						</a>
+
+
+						<a class="item-line__name item-name" href="">
+							<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая КАМАЗ 5 регулировочная шкворня толстая
+							КАМАЗ <span class="item-name__origin">(Китай)</span>
+						</a>
+
+
+						<div class="item-line__data">
+							<div class="item-line__data-price item-price">
+								<p class="item-price__text">За шт.</p>
+								<p class="item-price__value">199 990 ₽</p>
+							</div>
+
+							<div class="item-line__data-specs" aria-label="Количество на складе">
+								<div class="item-stock">
+									<svg class="item-stock__icon" aria-hidden="true">
+										<use xlink:href="#ic-stock"></use>
+									</svg>
+									12
+								</div>
+
+								<div class="item-delivery" aria-label="Доставка">
+
+									<svg class="item-delivery__icon" aria-hidden="true">
+										<use xlink:href="#ic-delivery"></use>
+									</svg>
+									3
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="item-line__actions">
+							<div class="item-line__actions-quantity">
+								<div class="item-quantity">
+									<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+										−
+									</button>
+									<input class="item-quantity__input" type="text" value="1">
+									<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+										+
+									</button>
+								</div>
+							</div>
+
+							<div class="item-line__actions-buy">
+								<a class="item-line__buy-btn btn btn--theme-primary btn--size-m btn--ic-cart" href=""
+								   aria-label="В корзину" title="В корзину">
+									<span class="btn__text">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+									</span>
+
+								</a>
+							</div>
+						</div>
+
+					</article>
+
+
+				</div>
+
+				<a class="search-panel__result-ask text-link" href="">Как пользоваться поиском?</a>
+			</div>
+
+		</div>
+
+		<a class="search__ask _hide-on-mobile-1201" href="">
+			Как пользоваться поиском?
+		</a>
+
+	</div>
+</div>
+<nav class="breadcrumbs">
+	<div class="container">
+		<a class="breadcrumbs__link breadcrumbs__link--a" href="">Главная</a>
+		<a class="breadcrumbs__link breadcrumbs__link--a" href="">Страница между</a>
+		<span class="breadcrumbs__link breadcrumbs__link--current">Текущая страница</span>
+	</div>
+</nav>
+
+
+
+<main>
+
+
+	<div class="page-layout">
+
+		<div class="page-layout__left">
+		</div>
+
+		<div class="page-layout__right">
+
+
+
+			<div class="container">
+
+				<div class="scheme-title title-p">
+
+					<p class="scheme-title__title title-h1"> Схемы</p>
+
+					<p class="scheme-title__text caption-gray">Для показа схемы выберите все нужные параметры</p>
+
+				</div>
+
+
+				<div class="filter">
+
+					<form class="form" action="">
+
+						<div class="form__item form__item--filter">
+							<label class="input-box input-box--theme-light input-box--select">
+								<span class="input-box__label input-box__label--theme-light">Тип техники</span>
+
+								<select class="input-box__select input-box__select--theme-light" name="" id="">
+									<option value="">Все</option>
+									<option value="">трактор</option>
+									<option value="">комбайн</option>
+
+								</select>
+
+
+							</label>
+						</div>
+
+						<div class="form__item form__item--filter">
+							<label class="input-box input-box--theme-light input-box--select">
+								<span class="input-box__label input-box__label--theme-light">Марка</span>
+
+								<select class="input-box__select input-box__select--theme-light" name="" id="">
+									<option value="">Все</option>
+									<option value="">трактор</option>
+									<option value="">комбайн</option>
+
+								</select>
+
+
+							</label>
+						</div>
+
+						<div class="form__item form__item--filter">
+							<label class="input-box input-box--theme-light input-box--select">
+								<span class="input-box__label input-box__label--theme-light">Модель</span>
+
+								<select class="input-box__select input-box__select--theme-light" name="" id="">
+									<option value="">Все</option>
+									<option value="">трактор</option>
+									<option value="">комбайн</option>
+
+								</select>
+
+
+							</label>
+						</div>
+
+						<div class="form__item form__item--filter form-item--scheme">
+
+
+
+							<div class="has-c-dropdown filter-accordion">
+
+								<div class="input-box input-box--theme-light">
+									<span class="input-box__label input-box__label--theme-light">Схема</span>
+
+
+									<div class="input-box__input input-box__input--theme-light filter-accordion__input __empty">Схема такая-то</div>
+
+								</div>
+
+								<ul class="has-c-dropdown__c-dropdown c-dropdown c-dropdown--accordion accordion unset-list-style">
+
+									<li class="accordion__parent">
+
+										<a class="accordion__link" href="javascript:void(0);">Категория 1</a>
+
+										<ul class="unset-list-style accordion__list">
+											<li class="accordion__parent ">
+
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 1</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 1</li>
+													<li class="accordion__elem">Элемент 2</li>
+												</ul>
+											</li>
+											<li class="accordion__parent">
+
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 2</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 3</li>
+													<li class="accordion__elem">Элемент 4</li>
+												</ul>
+
+											</li>
+
+											<li class="accordion__parent">
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 3</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 5</li>
+													<li class="accordion__parent">
+														<a class="accordion__link" href="javascript:void(0);">Под-под-категория 1</a>
+
+
+														<ul class="unset-list-style accordion__list">
+															<li class="accordion__elem">Элемент 6</li>
+															<li class="accordion__elem">Элемент 7</li>
+														</ul>
+
+
+													</li>
+												</ul>
+
+											</li>
+										</ul>
+
+									</li>
+									<li class="accordion__parent">
+
+										<a class="accordion__link" href="javascript:void(0);">Категория 2</a>
+
+										<ul class="unset-list-style accordion__list">
+											<li class="accordion__parent ">
+
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 1</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 1</li>
+													<li class="accordion__elem">Элемент 2</li>
+												</ul>
+											</li>
+											<li class="accordion__parent">
+
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 2</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 3</li>
+													<li class="accordion__elem">Элемент 4</li>
+												</ul>
+
+											</li>
+
+											<li class="accordion__parent">
+												<a class="accordion__link" href="javascript:void(0);">Подкатегория 3</a>
+
+												<ul class="unset-list-style accordion__list">
+													<li class="accordion__elem">Элемент 5</li>
+													<li class="accordion__parent">
+														<a class="accordion__link" href="javascript:void(0);">Под-под-категория 1</a>
+
+
+														<ul class="unset-list-style accordion__list">
+															<li class="accordion__elem">Элемент 6</li>
+															<li class="accordion__elem">Элемент 7</li>
+														</ul>
+
+
+													</li>
+													<li class="accordion__parent">
+														<a class="accordion__link" href="javascript:void(0);">Под-под-категория 2</a>
+
+
+														<ul class="unset-list-style accordion__list">
+															<li class="accordion__elem">Элемент 8</li>
+															<li class="accordion__elem">Элемент 9</li>
+														</ul>
+
+
+													</li>
+												</ul>
+
+											</li>
+										</ul>
+
+									</li>
+									<li class="accordion__elem">Элемент 1</li>
+									<li class="accordion__elem">Элемент 2</li>
+
+
+								</ul>
+							</div>
+
+
+
+						</div>
+
+
+					</form>
+
+
+				</div>
+
+
+				<h1 class="title-h2 title-p">
+					Головка цилиндров. Клапаны и толкатели клапанов МТЗ 80, 82
+				</h1>
+
+
+				<div>
+					<img src="img/scheme-view.jpg" alt="" style="width: 100%; display: block;">
+				</div>
+
+
+				<div class="scheme-list-wrapper js-scheme-mCustomScrollbar">
+					<ul class="scheme-list unset-list-style">
+
+						<li class="scheme-line active" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+
+
+											<p class="item-stock__tooltip item-tooltip">
+												В наличии на складе, можно забрать сегодня
+											</p>
+
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+
+											<p class="item-delivery__tooltip item-tooltip">
+												доставка в течение 3 дней
+											</p>
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line active" tabindex="0">
+
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413АРСМ-10.02.02.413АРСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,546х80х1,546х80х1,5 регулировочная шкворня толстая <span
+										class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<span class="caption-gray">Обратитесь к  <a href=""
+																					class="link-color-default link-decoration">консультанту</a></span>
+
+									</div>
+
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+
+
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочнаярегулировочнаярегулировочная шкворня толстая <span
+										class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line active" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+
+						<li class="scheme-line active" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="scheme-line" tabindex="0">
+
+							<div class="scheme-line__number caption-gray">
+								01
+							</div>
+
+
+							<a class="scheme-line__photo view-photo" href="">
+								<svg class="view-photo__icon" aria-hidden="true">
+									<use xlink:href="#ic-photo"></use>
+								</svg>
+							</a>
+
+							<a class="scheme-line__code item-code" href="" data-label="Артикул:">
+								РСМ-10.02.02.413А
+							</a>
+
+
+							<a class="scheme-line__name item-name" href="">
+								<b>Шайба</b> 46х80х1,5 регулировочная шкворня толстая <span class="item-name__origin">(Китай)</span>
+							</a>
+
+							<div class="scheme-line__data">
+
+								<div class="scheme-line__availability">
+
+									<p class="scheme-line__availability-text caption-gray">
+										Наличие
+									</p>
+
+									<div class="scheme-line__availability-specs" aria-label="Количество на складе">
+										<div class="item-stock">
+											<svg class="item-stock__icon" aria-hidden="true">
+												<use xlink:href="#ic-stock"></use>
+											</svg>
+											1220
+										</div>
+
+										<div class="item-delivery" aria-label="Доставка">
+
+											<svg class="item-delivery__icon" aria-hidden="true">
+												<use xlink:href="#ic-delivery"></use>
+											</svg>
+											35
+										</div>
+									</div>
+
+								</div>
+
+
+								<div class="scheme-line__data-price item-price">
+									<p class="item-price__text caption-gray">Цена с НДС</p>
+									<p class="item-price__value">2 199 990 ₽</p>
+								</div>
+
+
+							</div>
+
+
+							<div class="scheme-line__actions">
+								<div class="scheme-line__actions-quantity">
+									<div class="item-quantity">
+										<button class="item-quantity__btn btn" aria-label="Уменьшить количество">
+											−
+										</button>
+										<input class="item-quantity__input" type="text" value="1">
+										<button class="item-quantity__btn btn" aria-label="Увеличить количество">
+											+
+										</button>
+									</div>
+								</div>
+
+								<div class="scheme-line__actions-buy">
+									<a class="btn btn--theme-primary btn--ic-cart"
+									   href="">
+									<span class="btn__text btn__text--w-icon">
+										<svg aria-hidden="true">
+										<use xlink:href="#ic-cart"></use>
+									</svg>
+
+										Купить
+
+									</span>
+
+									</a>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+</main>
+
+
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+
+			<div class="footer-content__company">
+				<div class="copyright">
+					<p class="copyright__company">© Агротрак </p>
+					<p class="copyright__text">Интернет-магазин сельхоззапчастей</p>
+				</div>
+
+
+				<a class="company-site link-decoration" href="">
+					Сайт компании Агротрак&nbsp;<svg class="company-site__icon" aria-hidden="true">
+					<use xlink:href="#ic-openlink"></use>
+				</svg>
+				</a>
+
+			</div>
+
+			<nav class="footer-content__menu js-footer-content__menu" aria-label="Меню">
+
+
+				<button class="footer-menu-btn js-footer-menu-btn _show-on-mobile-991" type="button" aria-label="Открыть меню">
+					<span class="footer-menu-btn__text">
+							Меню
+								<svg class="footer-menu-btn__icon" aria-hidden="true">
+						<use xlink:href="#ic-chevron-down"></use>
+					</svg>
+
+					</span>
+
+				</button>
+
+
+				<ul class="h-menulist unset-list-style">
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Схемы</a>
+					</li>
+
+					<li class="h-menulist__item">
+						<a class="h-menulist__link h-menulist__link--active" href="">О компании</a>
+					</li>
+
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Бренды</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Новости</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Доставка и оплата</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Возврат и гарантия</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Отзывы</a>
+					</li>
+					<li class="h-menulist__item">
+						<a class="h-menulist__link" href="">Контакты</a>
+					</li>
+
+				</ul>
+			</nav>
+
+
+			<div class="footer-content__media">
+				<section class="socials">
+					<h2 class="footer-h2">
+						Мы в социальных сетях
+					</h2>
+
+					<div class="socials-list">
+						<a class="socials-list__link" href="" aria-label="VK">
+							<svg class="socials-list__icon" aria-hidden="true">
+								<use xlink:href="#ic-vk"></use>
+							</svg>
+						</a>
+
+						<a class="socials-list__link" href="" aria-label="Facebook">
+							<svg class="socials-list__icon" aria-hidden="true">
+								<use xlink:href="#ic-facebook"></use>
+							</svg>
+						</a>
+
+						<a class="socials-list__link" href="" aria-label="Instagram">
+							<svg class="socials-list__icon" aria-hidden="true">
+								<use xlink:href="#ic-insta"></use>
+							</svg>
+						</a>
+
+						<a class="socials-list__link" href="" aria-label="Одноклассники">
+							<svg class="socials-list__icon" aria-hidden="true">
+								<use xlink:href="#ic-odnoklassniki"></use>
+							</svg>
+						</a>
+					</div>
+
+				</section>
+
+
+				<section class="apps">
+					<h2 class="footer-h2">
+						Мобильное приложение
+					</h2>
+
+					<div class="apps-list">
+						<a class="apps-list__link" href="" aria-label="Скачать на Google Play">
+							<img src="img/play_store.svg" alt="Скачать на Google Play">
+						</a>
+
+						<a class="apps-list__link" href="" aria-label="Скачать на App Store">
+							<img src="img/applestore.svg" alt="Скачать на App Store">
+						</a>
+
+					</div>
+
+
+				</section>
+
+
+			</div>
+
+
+			<div class="footer-content__contact">
+				<div class="contact-item contact-item--footer">
+					<a class="contact-item__value" href="mailto:shop@agrotrak.ru" aria-label="Электронная почта">
+						<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+							<use xlink:href="#ic-mail"></use>
+						</svg>
+						shop@agrotrak.ru
+					</a>
+
+					<a class="contact-item__legend" href="">
+						Написать нам
+					</a>
+				</div>
+
+				<div class="contact-item contact-item--footer">
+					<a class="contact-item__value" href="tel:88007001817" aria-label="Телефон">
+						<svg class="contact-item__icon contact-item__icon" aria-hidden="true">
+							<use xlink:href="#ic-phone"></use>
+						</svg>
+						8 800 700 18 17
+					</a>
+
+					<a class="contact-item__legend" href="">
+						Заказать обратный звонок
+					</a>
+				</div>
+			</div>
+
+
+			<section class="footer-content__subscribe">
+				<h2 class="footer-h2">
+					Подпишитесь на нашу рассылку
+				</h2>
+
+				<div class="input-btn-set">
+
+					<label class="input-btn-set__input-box input-box input-box--theme-dark">
+						<span class="input-box__label input-box__label--theme-dark">E-mail</span>
+						<input class="input-btn-set__input input-box__input input-box__input--theme-dark" type="text"
+							   placeholder="Электронная почта">
+					</label>
+
+
+					<button class="input-btn-set__btn btn btn--theme-primary" type="submit">
+						<span class="btn__text">
+							ОК
+						</span>
+					</button>
+
+				</div>
+
+
+			</section>
+
+		</div>
+	</div>
+</footer>
+
+<aside class="sidebar-nav">
+	<ul class="sidebar-nav-list">
+		<li class="sidebar-nav-item">
+			<a class="sidebar-nav-back" href="https://anastasia-son.github.io">
+				<span class="sidebar-item-name">Назад к портфолио</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="index.html">
+				<span class="sidebar-item-number">1</span>
+				<span class="sidebar-item-name">Главная</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item sidebar-nav-item_current">
+			<a href="scheme.html">
+				<span class="sidebar-item-number">2</span>
+				<span class="sidebar-item-name">Каталог (схемы)</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="item_detail.html">
+				<span class="sidebar-item-number">3</span>
+				<span class="sidebar-item-name">Детальная товара</span>
+			</a>
+		</li>
+
+		<li class="sidebar-nav-item">
+			<a href="reviews.html">
+				<span class="sidebar-item-number">4</span>
+				<span class="sidebar-item-name">Отзывы</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="contact.html">
+				<span class="sidebar-item-number">5</span>
+				<span class="sidebar-item-name">Контакты</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="news_list.html">
+				<span class="sidebar-item-number">6</span>
+				<span class="sidebar-item-name">Новости</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="news_detail.html">
+				<span class="sidebar-item-number">7</span>
+				<span class="sidebar-item-name">Детальная новости</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="popups.html">
+				<span class="sidebar-item-number">8</span>
+				<span class="sidebar-item-name">Всплывающие окна</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="about_delivery.html">
+				<span class="sidebar-item-number">9</span>
+				<span class="sidebar-item-name">Информационная страница</span>
+			</a>
+		</li>
+
+		<li class="sidebar-nav-item">
+			<a href="404.html">
+				<span class="sidebar-item-number">10</span>
+				<span class="sidebar-item-name">404</span>
+			</a>
+		</li>
+
+		<li class="sidebar-nav-item">
+			<a href="authorize.html">
+				<span class="sidebar-item-number">11</span>
+				<span class="sidebar-item-name">Авторизация</span>
+			</a>
+		</li>
+
+
+
+		<li class="sidebar-nav-item">
+			<a href="register_F.html">
+				<span class="sidebar-item-number">12</span>
+				<span class="sidebar-item-name">Регистрация</span>
+			</a>
+		</li>
+
+
+
+		<li class="sidebar-nav-item">
+			<a href="cabinet_U_orders.html">
+				<span class="sidebar-item-number">13</span>
+				<span class="sidebar-item-name">Список заказов</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="cabinet_F_view_order.html">
+				<span class="sidebar-item-number">14</span>
+				<span class="sidebar-item-name">Детальная заказа</span>
+			</a>
+		</li>
+
+		<li class="sidebar-nav-item">
+			<a href="order_placement.html">
+				<span class="sidebar-item-number">15</span>
+				<span class="sidebar-item-name">Оформление заказа</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="cart.html">
+				<span class="sidebar-item-number">16</span>
+				<span class="sidebar-item-name">Корзина</span>
+			</a>
+		</li>
+		<li class="sidebar-nav-item">
+			<a href="cabinet_F_profile.html">
+				<span class="sidebar-item-number">17</span>
+				<span class="sidebar-item-name">Личный кабинет</span>
+			</a>
+		</li>
+	</ul>
+</aside>
+
+
+<div class="svg-sprite" style="display: none;width: 0;height: 0;" aria-hidden="true">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-cart">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				  d="M6.1 9.99h11.8l-3.942-5.563a1 1 0 0 1 .231-1.39l.276-.198a1 1 0 0 1 1.4.233l4.902 6.918h.392a1 1 0 0 1 .959 1.285L19 21.75H5L1.883 11.275A1 1 0 0 1 2.84 9.99h.392l4.902-6.918a1 1 0 0 1 1.4-.233l.276.198a1 1 0 0 1 .231 1.39L6.1 9.99zm1.233 2.352H6.167v7.056h1.166v-7.056zm3.5 0H9.667v7.056h1.166v-7.056zm2.334 0h1.166v7.056h-1.166v-7.056zm4.666 0h-1.166v7.056h1.166v-7.056z"></path>
+		</symbol>
+
+		<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" id="ic-check-green">
+			<circle cx="8" cy="8" r="8" fill="#39A855"></circle>
+			<path d="M4 7.5L7.5 10 12 5.5" stroke="#fff" stroke-width="2" fill="none"></path>
+		</symbol>
+
+
+
+		<symbol viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" id="ic-chevron-up">
+			<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 		"/>
+		</symbol>
+
+		<symbol viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" id="ic-chevron-down">
+			<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>
+		</symbol>
+
+		<symbol viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" id="ic-chevron-left">
+			<polygon points="207.093,30.187 176.907,0 48.907,128 176.907,256 207.093,225.813 109.28,128 		"/>
+		</symbol>
+
+		<symbol viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" id="ic-chevron-right">
+			<polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128 "/>
+		</symbol>
+
+		<symbol id="ic-arrow-left" viewBox="0 0 408 408">
+			<path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
+		</symbol>
+		<symbol id="ic-arrow-right" viewBox="0 0 408 408">
+			<polygon points="204,0 168.3,35.7 311.1,178.5 0,178.5 0,229.5 311.1,229.5 168.3,372.3 204,408 408,204 		"/>
+		</symbol>
+
+
+		<symbol viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" id="ic-cross-red">
+			<circle cx="9" cy="9" r="8" fill="#EB5757"></circle>
+			<path d="M4.757 4.757l8.486 8.486m-8.486 0l8.486-8.486" stroke="#fff" stroke-width="2"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-cross">
+			<path d="M7.757 7.757l8.486 8.486m-8.486 0l8.486-8.486" stroke="#4F4F4F" stroke-width="2"></path>
+		</symbol>
+
+
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-cross-nocolor">
+			<path d="M7.757 7.757l8.486 8.486m-8.486 0l8.486-8.486" stroke="inherit" stroke-width="2"></path>
+		</symbol>
+
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-delete">
+			<path d="M7 4V2h10v2h5v2h-2v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H2V4h5zM6 6v14h12V6H6zm3 3h2v8H9V9zm4 0h2v8h-2V9z"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-edit">
+			<path d="M13.8 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V10.2"
+				  stroke="#89979E" stroke-width="2" stroke-linecap="round" fill="none"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M10 11.1305L19.1305 2L22 4.86945L12.8695 14H10V11.1305Z"
+				  fill="#89979E"/>
+		</symbol>
+
+
+		<symbol viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg" id="ic-engine">
+
+			<path d="M11.0511 0.370188C10.7699 0.366438 10.5036 0.512688 10.3574 0.760188C10.2186 1.00769 10.2186 1.30769 10.3574 1.55519C10.5036 1.80269 10.7699 1.94894 11.0511 1.94894H12.6299V2.73644H14.9999V1.94894H16.5786C16.8636 1.94894 17.1261 1.80269 17.2724 1.55519C17.4149 1.30769 17.4149 1.00769 17.2724 0.760188C17.1261 0.512688 16.8636 0.366438 16.5786 0.370188H11.0511ZM9.33738 4.31519C8.91738 4.31519 8.51612 4.48394 8.21987 4.78019L5.52737 7.47269H4.73612C4.30112 7.47269 3.94862 7.82894 3.94862 8.26394V15.3702C3.94862 15.8052 4.30112 16.1577 4.73612 16.1577H5.52737L7.43237 18.0627C7.72862 18.3589 8.12987 18.5277 8.54987 18.5277H15.1349C15.5549 18.5277 15.9561 18.3589 16.2524 18.0627L19.2711 15.0402C19.5711 14.7439 19.7361 14.3464 19.7361 13.9264V5.89394C19.7361 5.02394 19.0311 4.31519 18.1574 4.31519H9.33738ZM22.8824 6.67019C22.4474 6.68144 22.0986 7.03769 22.1061 7.47269V9.05144H21.3149V12.2089H22.1061V13.7914C22.1024 14.0727 22.2486 14.3389 22.4961 14.4852C22.7436 14.6239 23.0474 14.6239 23.2911 14.4852C23.5386 14.3389 23.6886 14.0727 23.6849 13.7914V7.47269C23.6886 7.26269 23.6024 7.05269 23.4524 6.90269C23.3024 6.75269 23.0961 6.67019 22.8824 6.67019ZM12.6299 6.68519C13.0649 6.68519 13.4211 7.03769 13.4211 7.47269V10.6302H14.9999C15.4349 10.6302 15.7911 10.9864 15.7911 11.4214C15.7911 11.6464 15.6786 11.8302 15.6786 11.8302L13.3236 15.7452C13.3236 15.7452 13.0836 16.1577 12.6299 16.1577C12.1949 16.1577 11.8424 15.8052 11.8424 15.3702V12.2089H10.2636C9.82862 12.2089 9.47238 11.8564 9.47238 11.4214C9.47238 11.2302 9.61862 10.9827 9.61862 10.9827L11.9136 7.14644C11.9136 7.14644 12.2099 6.68519 12.6299 6.68519ZM0.776125 8.25269C0.341125 8.26019 -0.0076254 8.61644 -0.000125403 9.05144V15.3702C-0.0038754 15.6514 0.146125 15.9177 0.389875 16.0639C0.637375 16.2027 0.941125 16.2027 1.18862 16.0639C1.43238 15.9177 1.58238 15.6514 1.57862 15.3702V13.7914H2.36987V10.6302H1.57862V9.05144C1.58238 8.84144 1.49987 8.63519 1.34612 8.48144C1.19612 8.33144 0.989875 8.24894 0.776125 8.25269Z"/>
+
+		</symbol>
+		<symbol viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" id="ic-facebook">
+			<path d="M30 25.833A4.166 4.166 0 0 1 25.833 30H4.167A4.166 4.166 0 0 1 0 25.833V4.167A4.166 4.166 0 0 1 4.167 0h21.666A4.166 4.166 0 0 1 30 4.167v21.666z"
+				  fill="#3F51B5"></path>
+			<path d="M23.64 15.833h-2.807v10.834h-4.166V15.833h-2.5V12.5h2.5v-2.008c.003-2.924 1.217-4.659 4.661-4.659h2.839v3.334h-1.905c-1.34 0-1.429.501-1.429 1.435V12.5h3.334l-.528 3.333z"
+				  fill="#fff"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-hamburger">
+			<path d="M21 6H3m18 6H3m18 6H3" stroke="#333" stroke-width="2" stroke-linejoin="round"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-hamburger-close">
+			<path d="M18.728 18.728L6 6m12.728.272L6 19" stroke="#333" stroke-width="2" stroke-linejoin="round"></path>
+		</symbol>
+		<symbol viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" id="ic-insta">
+			<path d="M21.667 30H8.333C3.75 30 0 26.25 0 21.667V8.333C0 3.75 3.75 0 8.333 0h13.334C26.25 0 30 3.75 30 8.333v13.334C30 26.25 26.25 30 21.667 30z"
+				  fill="#304FFE"></path>
+			<path d="M0 8.333v13.334C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667V8.333c0-.833-.085-1.582-.332-2.334C25 2.25 19.001 0 12.5 0 9.417 0 6.416.501 3.584 1.5A8.292 8.292 0 0 0 0 8.334z"
+				  fill="#304FFE" fill-opacity=".29"></path>
+			<path d="M12.5 1.667c-4.167 0-8.001.999-11.5 2.666a8.371 8.371 0 0 0-1 4v13.334C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667V8.499c-4.583-4.248-10.749-6.832-17.5-6.832z"
+				  fill="#6200EA"></path>
+			<path d="M30 10.833c-4.417-4.583-10.583-7.5-17.5-7.5A23.83 23.83 0 0 0 .166 6.751C.085 7.25 0 7.751 0 8.333v13.334C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667V10.833z"
+				  fill="#673AB7"></path>
+			<path d="M30 13.333C25.918 8.25 19.583 5 12.5 5 7.832 5 3.584 6.416 0 8.835v12.832C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667v-8.334z"
+				  fill="#8E24AA"></path>
+			<path d="M30 21.667v-5.502c-3.75-5.664-10.166-9.498-17.5-9.498-4.668 0-9 1.582-12.5 4.166v10.834C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667z"
+				  fill="#C2185B"></path>
+			<path d="M30 21.667v-1.999c-3.001-6.667-9.668-11.335-17.5-11.335-4.75 0-9.167 1.752-12.5 4.668v8.666C0 26.25 3.75 30 8.333 30h13.334C26.25 30 30 26.25 30 21.667z"
+				  fill="#D81B60"></path>
+			<path d="M29.668 24c-1.585-8-8.669-14-17.168-14-4.915 0-9.333 1.999-12.5 5.25v6.417C0 26.25 3.75 30 8.333 30h13.334c3.75 0 6.998-2.5 8.001-6z"
+				  fill="#F50057"></path>
+			<path d="M28.249 26.667c-.417-8.334-7.25-15-15.749-15-5.085 0-9.583 2.415-12.5 6.165v3.835C0 26.25 3.75 30 8.333 30h13.334c2.666 0 5.084-1.335 6.582-3.333z"
+				  fill="#FF1744"></path>
+			<path d="M12.5 13.333c-5.417 0-10.085 3.002-12.5 7.5v.834C0 26.25 3.75 30 8.333 30h13.334c1.832 0 3.584-.583 4.915-1.667 0-.25.085-.582.085-.833 0-7.832-6.335-14.167-14.167-14.167z"
+				  fill="#FF5722"></path>
+			<path d="M12.5 15C6.667 15 1.833 18.916.417 24.333 1.5 27.666 4.668 30 8.333 30h13.334c1.165 0 2.168-.25 3.167-.667.081-.583.166-1.25.166-1.833C25 20.583 19.417 15 12.5 15z"
+				  fill="#FF6F00"></path>
+			<path d="M12.5 16.667c-5.749 0-10.417 4.417-10.749 10C3.25 28.665 5.667 30 8.333 30h13.334c.5 0 .918-.085 1.416-.166.166-.752.25-1.5.25-2.334 0-6-4.834-10.833-10.833-10.833z"
+				  fill="#FF9800"></path>
+			<path d="M21.335 30c.247-.833.332-1.667.332-2.5a9.139 9.139 0 0 0-9.167-9.167A9.139 9.139 0 0 0 3.333 27.5c0 .25 0 .583.085.833C4.834 29.333 6.5 30 8.333 30h13.002z"
+				  fill="#FFC107"></path>
+			<path d="M12.5 20A7.469 7.469 0 0 0 5 27.5c0 .667.085 1.335.25 1.917.915.417 2 .583 3.083.583h11.25A7.817 7.817 0 0 0 20 27.5c0-4.167-3.333-7.5-7.5-7.5z"
+				  fill="#FFD54F"></path>
+			<path d="M12.5 21.751a5.797 5.797 0 0 0-5.833 5.834c0 .833.166 1.582.501 2.33.417.085.749.085 1.165.085h9.5a5.935 5.935 0 0 0 .5-2.415A5.797 5.797 0 0 0 12.5 21.75z"
+				  fill="#FFE082"></path>
+			<path d="M12.5 23.418a4.125 4.125 0 0 0-4.167 4.167c0 .914.332 1.748.834 2.415h6.666c.502-.667.834-1.5.834-2.415a4.125 4.125 0 0 0-4.167-4.167z"
+				  fill="#FFECB3"></path>
+			<path d="M20 26.667H10c-3.665 0-6.667-3.002-6.667-6.667V10c0-3.665 3.002-6.667 6.667-6.667h10c3.665 0 6.667 3.002 6.667 6.667v10c0 3.665-3.002 6.667-6.667 6.667zM10 5c-2.75 0-5 2.25-5 5v10c0 2.75 2.25 5 5 5h10c2.75 0 5-2.25 5-5V10c0-2.75-2.25-5-5-5H10z"
+				  fill="#fff"></path>
+			<path d="M15 20.833A5.799 5.799 0 0 1 9.167 15 5.8 5.8 0 0 1 15 9.167 5.8 5.8 0 0 1 20.833 15 5.799 5.799 0 0 1 15 20.833zm0-10A4.125 4.125 0 0 0 10.833 15 4.125 4.125 0 0 0 15 19.167 4.125 4.125 0 0 0 19.167 15 4.125 4.125 0 0 0 15 10.833zm6.667-2.5c0 .502-.332.834-.834.834-.501 0-.833-.332-.833-.834 0-.501.332-.833.833-.833.502 0 .834.332.834.833z"
+				  fill="#fff"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-mail">
+			<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-Minus">
+			<path d="M6 12h12" stroke="#4F4F4F" stroke-width="2"></path>
+		</symbol>
+		<symbol viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" id="ic-odnoklassniki">
+			<path d="M30 25.833A4.125 4.125 0 0 1 25.833 30H4.167A4.125 4.125 0 0 1 0 25.833V4.167A4.125 4.125 0 0 1 4.167 0h21.666A4.125 4.125 0 0 1 30 4.167v21.666z"
+				  fill="#FF9800"></path>
+			<path d="M17.415 20.332a9.518 9.518 0 0 0 3.418-1.416c.834-.498 1.084-1.582.583-2.415-.498-.834-1.582-1.084-2.415-.583-2.419 1.497-5.583 1.497-8.002 0-.833-.501-1.917-.25-2.415.583-.501.833-.25 1.917.583 2.415 1.084.667 2.249 1.169 3.418 1.416L9.25 23.665c-.667.668-.667 1.752 0 2.5.332.336.749.502 1.25.502.417 0 .915-.166 1.25-.502L15 22.917l3.249 3.248c.667.668 1.751.668 2.5 0 .667-.664.667-1.748 0-2.5l-3.334-3.333zM15 3.333a5.8 5.8 0 0 0-5.833 5.834A5.8 5.8 0 0 0 15 15a5.799 5.799 0 0 0 5.833-5.833A5.799 5.799 0 0 0 15 3.333zm0 8.334c-1.416 0-2.5-1.084-2.5-2.5s1.084-2.5 2.5-2.5 2.5 1.084 2.5 2.5-1.084 2.5-2.5 2.5z"
+				  fill="#fff"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-openlink">
+			<path d="M20 5.414l-6.293 6.293-1.414-1.414L18.586 4H16V2h5a1 1 0 0 1 1 1v5h-2V5.414z"></path>
+			<path d="M2 5a3 3 0 0 1 3-3h6.8a1 1 0 1 1 0 2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6.8a1 1 0 1 1 2 0V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5z"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-gears">
+			<path d="M19.1663 0.000127973C19.0013 -0.00362203 18.84 0.075128 18.75 0.225128L17.9925 1.45888C17.7337 1.43638 17.4862 1.43638 17.2313 1.45888L16.4587 0.236378C16.335 0.041378 16.0763 -0.029872 15.8625 0.060128L14.5238 0.626378C14.31 0.712628 14.19 0.948878 14.2425 1.17388L14.5688 2.58763C14.37 2.76013 14.1863 2.94013 14.0175 3.13888L12.6038 2.81263C12.375 2.76013 12.1575 2.89513 12.0675 3.10888L11.5163 4.46263C11.43 4.68013 11.5013 4.92388 11.6963 5.04388L12.915 5.80513C12.8963 6.06388 12.9075 6.33388 12.93 6.59263L11.7113 7.35013C11.5125 7.47763 11.4413 7.73263 11.5312 7.94638L12.0975 9.28513C12.1875 9.49888 12.4088 9.62263 12.6338 9.57013L14.0475 9.25513C14.2163 9.45013 14.4 9.62638 14.5988 9.79138L14.2875 11.2051C14.235 11.4339 14.3513 11.6701 14.5688 11.7564L15.9225 12.3076C15.9788 12.3301 16.0425 12.3376 16.1025 12.3376C16.26 12.3376 16.4138 12.2551 16.5037 12.1126L17.2913 10.8789C17.55 10.8976 17.8125 10.8864 18.0638 10.8639L18.855 12.0976C18.9825 12.2926 19.2225 12.3676 19.4363 12.2776L20.79 11.7114C21.0037 11.6214 21.1088 11.3889 21.0563 11.1601L20.715 9.74638C20.9063 9.58138 21.0863 9.39013 21.2513 9.19513L22.68 9.51013C22.9088 9.55888 23.1413 9.43888 23.2275 9.22513L23.7788 7.87138C23.8688 7.65388 23.7863 7.39888 23.5875 7.27513L22.335 6.51763C22.3538 6.26638 22.3575 6.01138 22.335 5.76013L23.5575 4.95388C23.7488 4.83013 23.8388 4.58638 23.7488 4.37638L23.1713 3.03763C23.0813 2.82013 22.8488 2.70013 22.62 2.75263L21.2063 3.09388C21.0375 2.89888 20.865 2.72638 20.67 2.56138L20.9663 1.13263C21.015 0.903878 20.8988 0.667628 20.685 0.581378L19.3313 0.030128C19.275 0.00762797 19.2225 0.000127973 19.1663 0.000127973ZM17.6175 4.22638C17.8725 4.22263 18.1275 4.26013 18.3787 4.36138C19.3763 4.76638 19.8563 5.90638 19.4513 6.90388C19.0425 7.90138 17.9025 8.38138 16.905 7.97638C15.9075 7.57138 15.4275 6.42763 15.8325 5.43013C16.14 4.68388 16.86 4.23763 17.6175 4.22638ZM6.91875 8.09638C6.68625 8.09638 6.48 8.26513 6.4425 8.49763L6.14625 10.3726C5.79375 10.4814 5.44125 10.6164 5.11875 10.7889L3.57 9.68638C3.3825 9.55138 3.1275 9.57013 2.9625 9.73138L1.65 11.0401C1.48875 11.2051 1.47375 11.4639 1.60875 11.6514L2.6925 13.2151C2.52 13.5414 2.37 13.8864 2.26125 14.2426L0.40125 14.5389C0.1725 14.5764 0 14.7826 0 15.0151V16.8601C0 17.0926 0.16125 17.2951 0.38625 17.3364L2.26125 17.6626C2.37 18.0189 2.52 18.3639 2.6925 18.6901L1.59375 20.2389C1.455 20.4264 1.47 20.6814 1.63875 20.8501L2.9475 22.1589C3.10875 22.3201 3.3675 22.3351 3.555 22.2039L5.11875 21.1164C5.445 21.2889 5.77875 21.4239 6.13125 21.5326L6.4425 23.4076C6.48 23.6364 6.68625 23.8089 6.91875 23.8089H8.76375C8.99625 23.8089 9.19875 23.6514 9.24 23.4226L9.57 21.5176C9.9225 21.4089 10.2563 21.2739 10.5788 21.1014L12.1575 22.2039C12.3488 22.3351 12.6038 22.3201 12.7688 22.1589L14.0775 20.8501C14.2425 20.6814 14.2575 20.4114 14.1225 20.2239L13.005 18.6751C13.1775 18.3526 13.3163 18.0114 13.4213 17.6626L15.3263 17.3364C15.555 17.2951 15.7125 17.0926 15.7125 16.8601V15.0151C15.7125 14.7826 15.5437 14.5914 15.3113 14.5539L13.4213 14.2426C13.3163 13.8939 13.1775 13.5526 13.005 13.2301L14.1075 11.6514C14.2388 11.4639 14.2275 11.2051 14.0625 11.0401L12.7538 9.73138C12.5888 9.56638 12.3338 9.55138 12.1425 9.68638L10.5788 10.8039C10.2563 10.6314 9.91875 10.4964 9.57 10.3876L9.24 8.49763C9.2025 8.26888 8.99625 8.09638 8.76375 8.09638H6.91875ZM7.85625 13.4964C9.2175 13.4964 10.3125 14.5914 10.3125 15.9526C10.3125 17.3139 9.21375 18.4089 7.85625 18.4089C6.49875 18.4089 5.4 17.3139 5.4 15.9526C5.4 14.5914 6.49875 13.4964 7.85625 13.4964Z"/>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-phone">
+			<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+			></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-photo">
+			<path d="M11.9998 16.2C13.7671 16.2 15.1998 14.7673 15.1998 13C15.1998 11.2327 13.7671 9.79999 11.9998 9.79999C10.2325 9.79999 8.7998 11.2327 8.7998 13C8.7998 14.7673 10.2325 16.2 11.9998 16.2Z"/>
+			<path d="M9 3L7.17 5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5H16.83L15 3H9ZM12 18C9.24 18 7 15.76 7 13C7 10.24 9.24 8 12 8C14.76 8 17 10.24 17 13C17 15.76 14.76 18 12 18Z"/>
+		</symbol>
+
+		<symbol viewBox="0 0 357 357" xmlns="http://www.w3.org/2000/svg" id="ic-plus">
+			<path xmlns="http://www.w3.org/2000/svg" d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+		</symbol>
+
+
+		<symbol viewBox="0 0 357 357" xmlns="http://www.w3.org/2000/svg" id="ic-minus">
+			<path d="M357,204H0v-51h357V204z"/>
+		</symbol>
+
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-refresh">
+			<circle cx="10" cy="10" r="7" stroke="#333" stroke-width="2"></circle>
+			<path d="M15 15l6 6" stroke="#333" stroke-width="2"></path>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-scheme-orange">
+			<rect x="3" y="14" width="7" fill="none" height="7" rx="1" stroke="#F2994A" stroke-width="2"/>
+			<rect x="6" y="3" width="12" height="5" rx="1" fill="none" stroke="#F2994A" stroke-width="2"/>
+			<rect x="14" y="14" width="7" height="7" rx="1" fill="none" stroke="#F2994A" stroke-width="2"/>
+			<path d="M7 13V11H17V13" fill="none" stroke="#F2994A" stroke-width="2"/>
+			<rect x="11.5" y="7.5" width="1" height="2" fill="none"stroke="#F2994A"/>
+		</symbol>
+		<symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="ic-search">
+			<path xmlns="http://www.w3.org/2000/svg"
+				  d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"/>
+		</symbol>
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-delivery">
+			<path d="M8.965 18C8.84612 18.8343 8.43021 19.5977 7.79368 20.1499C7.15714 20.7022 6.34272 21.0063 5.5 21.0063C4.65728 21.0063 3.84286 20.7022 3.20632 20.1499C2.56979 19.5977 2.15388 18.8343 2.035 18H1V6C1 5.73478 1.10536 5.48043 1.29289 5.29289C1.48043 5.10536 1.73478 5 2 5H16C16.2652 5 16.5196 5.10536 16.7071 5.29289C16.8946 5.48043 17 5.73478 17 6V8H20L23 12.056V18H20.965C20.8461 18.8343 20.4302 19.5977 19.7937 20.1499C19.1571 20.7022 18.3427 21.0063 17.5 21.0063C16.6573 21.0063 15.8429 20.7022 15.2063 20.1499C14.5698 19.5977 14.1539 18.8343 14.035 18H8.965ZM15 7H3V15.05C3.39456 14.6472 3.8806 14.3457 4.41675 14.1711C4.9529 13.9966 5.52329 13.9541 6.07938 14.0474C6.63546 14.1407 7.16077 14.3669 7.61061 14.7069C8.06044 15.0469 8.42148 15.4905 8.663 16H14.337C14.505 15.647 14.73 15.326 15 15.05V7ZM17 13H21V12.715L18.992 10H17V13ZM17.5 19C17.898 19 18.2796 18.8419 18.561 18.5605C18.8424 18.2791 19.0005 17.8975 19.0005 17.4995C19.0005 17.1015 18.8424 16.7199 18.561 16.4385C18.2796 16.1571 17.898 15.999 17.5 15.999C17.102 15.999 16.7204 16.1571 16.439 16.4385C16.1576 16.7199 15.9995 17.1015 15.9995 17.4995C15.9995 17.8975 16.1576 18.2791 16.439 18.5605C16.7204 18.8419 17.102 19 17.5 19ZM7 17.5C7 17.303 6.9612 17.108 6.88582 16.926C6.81044 16.744 6.69995 16.5786 6.56066 16.4393C6.42137 16.3001 6.25601 16.1896 6.07403 16.1142C5.89204 16.0388 5.69698 16 5.5 16C5.30302 16 5.10796 16.0388 4.92597 16.1142C4.74399 16.1896 4.57863 16.3001 4.43934 16.4393C4.30005 16.5786 4.18956 16.744 4.11418 16.926C4.0388 17.108 4 17.303 4 17.5C4 17.8978 4.15804 18.2794 4.43934 18.5607C4.72064 18.842 5.10218 19 5.5 19C5.89782 19 6.27936 18.842 6.56066 18.5607C6.84196 18.2794 7 17.8978 7 17.5Z"/>
+		</symbol>
+		<symbol viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" id="ic-signin">
+
+			<path d="M10.1177 14.5905L11.4622 15.9451H1.07993C0.669125 15.9451 0.333008 16.2838 0.333008 16.6977V17.2621C0.333008 17.6761 0.669125 18.0147 1.07993 18.0147H11.4622L10.1177 19.3694C9.81897 19.6704 9.81897 20.1219 10.1177 20.423L10.5286 20.8369C10.8273 21.1379 11.2755 21.1379 11.5742 20.8369L14.8607 17.5255C15.1595 17.2245 15.1595 16.773 14.8607 16.4719L11.5369 13.1606C11.2381 12.8596 10.79 12.8596 10.4912 13.1606L10.0804 13.5745C9.81897 13.8379 9.81897 14.3271 10.1177 14.5905Z"/>
+			<path d="M22.4629 1.11927V32.9157C22.4629 33.4425 22.9484 33.7812 23.4339 33.6307L33.1439 30.357C33.4427 30.2441 33.6668 29.9807 33.6668 29.642V4.35536C33.6668 4.0167 33.4427 3.7533 33.1439 3.64041L23.4339 0.366696C22.9484 0.21618 22.4629 0.59247 22.4629 1.11927ZM24.3302 18.1276C23.6953 18.1276 23.2098 17.6384 23.2098 16.9987C23.2098 16.359 23.6953 15.8698 24.3302 15.8698C24.9651 15.8698 25.4506 16.359 25.4506 16.9987C25.4506 17.6384 24.9651 18.1276 24.3302 18.1276Z"/>
+			<path d="M16.4878 4.58119V29.4163C16.4878 29.8302 16.8239 30.1689 17.2347 30.1689H19.4755C19.8863 30.1689 20.2224 29.8302 20.2224 29.4163V29.04C20.2224 28.6261 19.8863 28.2874 19.4755 28.2874H18.3551V5.71006H19.4755C19.8863 5.71006 20.2224 5.3714 20.2224 4.95748V4.58119C20.2224 4.16727 19.8863 3.82861 19.4755 3.82861H17.2347C16.8239 3.82861 16.4878 4.16727 16.4878 4.58119Z"/>
+
+		</symbol>
+		<symbol id="ic-signout" viewBox="0 0 34 34">
+			<path d="M5.30023 14.5897L3.95576 15.9442H14.338C14.7488 15.9442 15.085 16.2829 15.085 16.6968V17.2612C15.085 17.6751 14.7488 18.0137 14.338 18.0137H3.95576L5.30023 19.3683C5.599 19.6693 5.599 20.1208 5.30023 20.4219L4.88942 20.8358C4.59065 21.1368 4.14249 21.1368 3.84372 20.8358L0.557248 17.5246C0.258478 17.2236 0.258478 16.772 0.557248 16.471L3.88107 13.1598C4.17984 12.8588 4.628 12.8588 4.92677 13.1598L5.33758 13.5737C5.599 13.8371 5.599 14.3263 5.30023 14.5897Z"/>
+			<path d="M22.4629 1.11923V32.914C22.4629 33.4408 22.9484 33.7795 23.4339 33.629L33.1439 30.3554C33.4427 30.2425 33.6668 29.9791 33.6668 29.6405V4.35516C33.6668 4.01651 33.4427 3.75312 33.1439 3.64024L23.4339 0.366694C22.9484 0.216186 22.4629 0.592456 22.4629 1.11923ZM24.3302 18.1266C23.6953 18.1266 23.2098 17.6375 23.2098 16.9978C23.2098 16.3582 23.6953 15.869 24.3302 15.869C24.9651 15.869 25.4506 16.3582 25.4506 16.9978C25.4506 17.6375 24.9651 18.1266 24.3302 18.1266Z"/>
+			<path d="M16.4878 4.58091V29.4147C16.4878 29.8286 16.8239 30.1673 17.2347 30.1673H19.4755C19.8863 30.1673 20.2224 29.8286 20.2224 29.4147V29.0385C20.2224 28.6246 19.8863 28.2859 19.4755 28.2859H18.3551V5.70972H19.4755C19.8863 5.70972 20.2224 5.37108 20.2224 4.95718V4.58091C20.2224 4.16701 19.8863 3.82837 19.4755 3.82837H17.2347C16.8239 3.82837 16.4878 4.16701 16.4878 4.58091Z"/>
+		</symbol>
+
+		<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ic-stock">
+			<path d="M19 20.9999H5C4.73478 20.9999 4.48043 20.8946 4.29289 20.707C4.10536 20.5195 4 20.2651 4 19.9999V10.9999H1L11.327 1.61192C11.5111 1.4444 11.7511 1.35156 12 1.35156C12.2489 1.35156 12.4889 1.4444 12.673 1.61192L23 10.9999H20V19.9999C20 20.2651 19.8946 20.5195 19.7071 20.707C19.5196 20.8946 19.2652 20.9999 19 20.9999ZM6 18.9999H18V9.15692L12 3.70292L6 9.15692V18.9999ZM8 13.9999H16V15.9999H8V13.9999Z"/>
+		</symbol>
+		<symbol viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" id="ic-star">
+			<path fill="#fff" stroke="#E0E6EB" stroke-width="2" d="M1 1h38v38H1z"></path>
+			<path d="M13 20h14m-7 7l7-7-7-7" stroke="#89979E" stroke-width="2" stroke-linejoin="round"></path>
+		</symbol>
+		<symbol viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" id="ic-target">
+			<path d="M7.99935 5.33335C6.52602 5.33335 5.33268 6.52669 5.33268 8.00002C5.33268 9.47335 6.52602 10.6667 7.99935 10.6667C9.47268 10.6667 10.666 9.47335 10.666 8.00002C10.666 6.52669 9.47268 5.33335 7.99935 5.33335ZM13.9593 7.33335C13.6527 4.55335 11.446 2.34669 8.66602 2.04002V0.666687H7.33268V2.04002C4.55268 2.34669 2.34602 4.55335 2.03935 7.33335H0.666016V8.66669H2.03935C2.34602 11.4467 4.55268 13.6534 7.33268 13.96V15.3334H8.66602V13.96C11.446 13.6534 13.6527 11.4467 13.9593 8.66669H15.3327V7.33335H13.9593ZM7.99935 12.6667C5.41935 12.6667 3.33268 10.58 3.33268 8.00002C3.33268 5.42002 5.41935 3.33335 7.99935 3.33335C10.5793 3.33335 12.666 5.42002 12.666 8.00002C12.666 10.58 10.5793 12.6667 7.99935 12.6667Z" fill="#89979E"/>
+		</symbol>
+		<symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="ic-ask">
+			<path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM9 13V15H11V13H9ZM11 11.355C11.8037 11.1128 12.4936 10.59 12.9442 9.88174C13.3947 9.17353 13.5759 8.32705 13.4547 7.49647C13.3336 6.66588 12.9181 5.90644 12.284 5.35646C11.6499 4.80647 10.8394 4.50254 10 4.5C9.19085 4.49994 8.40666 4.78015 7.78079 5.29299C7.15492 5.80583 6.72601 6.51963 6.567 7.313L8.529 7.706C8.58468 7.42743 8.71832 7.1704 8.91437 6.96482C9.11042 6.75923 9.36081 6.61354 9.63643 6.54471C9.91204 6.47587 10.2015 6.48671 10.4712 6.57597C10.7409 6.66523 10.9797 6.82924 11.1598 7.04891C11.34 7.26858 11.454 7.53489 11.4887 7.81684C11.5234 8.0988 11.4773 8.3848 11.3558 8.64158C11.2343 8.89837 11.0423 9.11536 10.8023 9.26733C10.5623 9.4193 10.2841 9.49998 10 9.5C9.73478 9.5 9.48043 9.60536 9.29289 9.79289C9.10536 9.98043 9 10.2348 9 10.5V12H11V11.355Z"/>
+		</symbol>
+
+		<symbol viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" id="ic-vk">
+			<path d="M30 25.8333C30 28.1348 28.1348 30 25.8333 30H4.16667C1.86523 30 0 28.1348 0 25.8333V4.16667C0 1.86523 1.86523 0 4.16667 0H25.8333C28.1348 0 30 1.86523 30 4.16667V25.8333Z"
+				  fill="#0288D1"/>
+			<path d="M22.653 17.7994C24.388 19.4238 24.7494 20.2181 24.8079 20.3157C25.5241 21.5201 24.0137 21.6145 24.0137 21.6145L21.1198 21.6569C21.1198 21.6569 20.4948 21.7806 19.6777 21.2109C18.5938 20.4622 17.1126 18.5091 16.3184 18.763C15.5111 19.0201 15.7682 21.0677 15.7682 21.0677C15.7682 21.0677 15.7747 21.3183 15.5925 21.5201C15.3906 21.7317 15 21.6504 15 21.6504H14.1667C14.1667 21.6504 11.0775 21.6634 8.55795 19.0136C5.81381 16.1263 3.51889 10.7259 3.51889 10.7259C3.51889 10.7259 3.37891 10.3841 3.52865 10.2018C3.70118 9.9967 4.16667 9.99996 4.16667 9.99996H7.26238C7.26238 9.99996 7.55209 10.039 7.76042 10.1953C7.9362 10.3222 8.03061 10.5631 8.03061 10.5631C8.03061 10.5631 8.40495 11.569 9.06902 12.7278C10.3613 14.9869 10.9635 15.4817 11.403 15.2376C12.041 14.8828 11.849 12.0442 11.849 12.0442C11.849 12.0442 11.862 11.0123 11.5267 10.5533C11.2663 10.1953 10.7813 10.0911 10.5664 10.0618C10.3906 10.0423 10.6771 9.63212 11.0482 9.44983C11.6048 9.17639 12.5912 9.15686 13.7533 9.16988C14.6582 9.17965 15 9.16663 15 9.16663C16.0677 9.42704 15.7064 10.4362 15.7064 12.845C15.7064 13.6198 15.5664 14.707 16.1198 15.0651C16.3574 15.2246 17.2103 15.2474 18.6589 12.7571C19.349 11.5755 19.8926 10.4655 19.8926 10.4655C19.8926 10.4655 20.0098 10.2148 20.1823 10.1106C20.3646 9.99996 20.6055 9.99996 20.6055 9.99996L23.8639 10.0162C23.8639 10.0162 24.8438 9.89254 25 10.3418C25.166 10.8105 24.5996 11.6308 23.2715 13.4244C21.084 16.3704 20.8398 16.097 22.653 17.7994Z"
+				  fill="white"/>
+		</symbol>
+
+
+		<symbol id="ic-tractor" viewBox="0 0 22 20">
+			<path d="M3.22735 0C2.40385 0 1.62332 0.622994 1.62332 1.5181V8.36387C1.13638 8.65747 0.678085 8.99761 0.277077 9.39504C-0.0881258 9.7495 -0.091707 10.3331 0.262755 10.6983C0.617218 11.0635 1.20083 11.0671 1.56603 10.7126C2.51842 9.76382 3.83602 9.16589 5.28967 9.16589C8.2113 9.16589 10.5601 11.5146 10.5601 14.4363C10.5601 14.8981 10.9038 15.2884 11.3621 15.3457C11.8204 15.4066 12.25 15.113 12.3646 14.6654H15.1716C14.7313 15.1524 14.4556 15.7897 14.4556 16.4986C14.4556 18.0167 15.6872 19.2484 17.2053 19.2484C18.7234 19.2484 19.9551 18.0167 19.9551 16.4986C19.9551 15.7682 19.6758 15.1022 19.2104 14.6081C19.4861 14.5294 19.7761 14.3289 19.8978 14.0639L21.7023 9.42368C21.8849 9.01551 21.7381 8.67895 21.3586 8.67895L18.1219 8.30659V5.47089C18.1219 3.77735 19.0099 3.66636 19.0099 3.66636V2.74977C17.9178 2.74977 16.2887 3.20806 16.2887 5.47089V8.10608L12.0495 7.61914L10.4168 1.17438C10.2056 0.350882 9.53964 0 8.81281 0H3.22735ZM3.45649 1.83318H8.69824L10.1018 7.41864L9.38568 7.33271H3.45649V1.83318ZM5.28967 10.0825C2.75831 10.0825 0.706728 12.1341 0.706728 14.6654C0.706728 17.1968 2.75831 19.2484 5.28967 19.2484C7.82103 19.2484 9.87262 17.1968 9.87262 14.6654C9.87262 12.1341 7.82103 10.0825 5.28967 10.0825ZM5.28967 11.9157C6.80419 11.9157 8.03944 13.1509 8.03944 14.6654C8.03944 16.1799 6.80419 17.4152 5.28967 17.4152C3.77515 17.4152 2.53991 16.1799 2.53991 14.6654C2.53991 13.1509 3.77515 11.9157 5.28967 11.9157ZM17.2053 15.1237C17.9644 15.1237 18.5802 15.7395 18.5802 16.4986C18.5802 17.2576 17.9644 17.8735 17.2053 17.8735C16.4463 17.8735 15.8304 17.2576 15.8304 16.4986C15.8304 15.7395 16.4463 15.1237 17.2053 15.1237Z"/>
+		</symbol>
+
+		<symbol id="ic-combine" viewBox="0 0 22 18">
+			<path d="M6.10615 0.157295C5.82115 0.153545 5.5549 0.303545 5.4124 0.551045C5.2699 0.794795 5.2699 1.09854 5.4124 1.34605C5.5549 1.59354 5.82115 1.7398 6.10615 1.73605H6.19615L6.78865 6.4723H5.3149C4.44115 6.4723 3.73615 7.18105 3.73615 8.05105V9.6298H2.1574C1.79365 9.6298 1.47865 9.8773 1.3924 10.2298L0.604902 13.3873C0.571152 13.5148 0.571152 13.6423 0.604902 13.7698L1.3924 16.9273C1.47865 17.2798 1.79365 17.5273 2.1574 17.5273H19.5274C19.8912 17.5273 20.2062 17.2798 20.2924 16.9273L21.0799 13.7698C21.1137 13.6423 21.1137 13.5148 21.0799 13.3873L20.2924 10.2298C20.2062 9.8773 19.8912 9.6298 19.5274 9.6298H17.9487V8.05105C17.9487 7.24855 17.3412 6.5923 16.5649 6.4948L19.4787 3.3148H20.3149C20.5999 3.31854 20.8662 3.1723 21.0086 2.9248C21.1512 2.6773 21.1512 2.37354 21.0086 2.12979C20.8662 1.8823 20.5999 1.7323 20.3149 1.73605H19.1299C18.9087 1.73605 18.6987 1.8298 18.5524 1.99105L14.9637 5.9023L15.4849 1.73605H15.5787C15.8637 1.7398 16.1262 1.59354 16.2724 1.34605C16.4149 1.09854 16.4149 0.794795 16.2724 0.551045C16.1262 0.303545 15.8637 0.153545 15.5787 0.157295H6.10615ZM7.7899 1.73605H13.8949L13.3024 6.4723H8.3824L7.7899 1.73605ZM6.4999 8.05105C7.1524 8.05105 7.6849 8.58355 7.6849 9.23605C7.6849 9.3748 7.6549 9.5098 7.6099 9.6298H5.3899C5.3449 9.5098 5.3149 9.3748 5.3149 9.23605C5.3149 8.58355 5.8474 8.05105 6.4999 8.05105ZM15.1849 8.05105C15.8374 8.05105 16.3699 8.58355 16.3699 9.23605C16.3699 9.3748 16.3399 9.5098 16.2949 9.6298H14.0749C14.0262 9.5098 13.9999 9.3748 13.9999 9.23605C13.9999 8.58355 14.5287 8.05105 15.1849 8.05105ZM2.77615 11.2085H18.9087L19.3024 12.791H2.37865L2.77615 11.2085ZM2.37865 14.3698H19.3024L18.9087 15.9485H2.77615L2.37865 14.3698Z"/>
+		</symbol>
+
+
+		<symbol id="ic-agrotech" viewBox="0 0 23 18">
+			<path d="M4.73626 0.157295C4.30126 0.157295 3.94876 0.513544 3.94876 0.948544V8.05105H2.37001C1.49626 8.05105 0.79126 8.7598 0.79126 9.6298V13.5785C0.79126 14.4523 1.49626 15.1573 2.37001 15.1573H3.98626C4.18126 16.4885 5.32876 17.5273 6.70876 17.5273C8.09251 17.5273 9.24001 16.4885 9.43501 15.1573H11.8425C12.7163 15.1573 13.4213 14.4523 13.4213 13.5785V9.73855L15.6038 1.73605H16.5788C16.8638 1.7398 17.1263 1.59354 17.2725 1.34605C17.415 1.09854 17.415 0.794795 17.2725 0.551045C17.1263 0.303545 16.8638 0.153545 16.5788 0.157295H4.73626ZM5.52751 1.73605H13.9688L11.8688 9.4198C11.85 9.49105 11.8425 9.5623 11.8425 9.6298H9.33751C9.12001 9.6298 8.89876 9.61105 8.68501 9.5848V5.6848C8.68876 5.47105 8.60251 5.2648 8.45251 5.1148C8.30251 4.96105 8.09626 4.87855 7.88251 4.8823C7.44751 4.8898 7.09876 5.2498 7.10626 5.6848V9.1423C6.52501 8.87605 5.98501 8.5123 5.52751 8.05105V1.73605ZM18.1575 8.05105C15.81 8.05105 13.8675 9.76105 13.4925 11.9998H18.1575C18.5925 11.9998 18.9488 12.356 18.9488 12.791C18.9488 13.2223 18.5925 13.5785 18.1575 13.5785H13.4925C13.8675 15.8173 15.81 17.5273 18.1575 17.5273C20.7713 17.5273 22.8938 15.4048 22.8938 12.791C22.8938 10.1735 20.7713 8.05105 18.1575 8.05105ZM6.70876 13.5785C7.37251 13.5785 7.89376 14.0998 7.89376 14.7635C7.89376 15.4273 7.37251 15.9485 6.70876 15.9485C6.04876 15.9485 5.52751 15.4273 5.52751 14.7635C5.52751 14.0998 6.04876 13.5785 6.70876 13.5785Z"/>
+		</symbol>
+
+
+		<symbol id="ic-truck" viewBox="0 0 18 18">
+			<path d="M1.5 0V4.5H2.25C2.25 4.5 2.25 2.25 7.5 2.25H10.5C15.75 2.25 15.75 4.5 15.75 4.5H16.5V0H1.5ZM9 3C7.30957 3 6.03809 3.12012 5.10938 3.375C4.64648 3.50391 4.25977 3.67676 3.9375 3.91406C3.62988 4.14258 3.38965 4.48535 3.32812 4.89844H3.30469V4.94531L2.46094 9.75C1.49707 9.76172 0.75 10.5176 0.75 11.4844V14.25H17.25V11.4844C17.25 10.5176 16.5029 9.76172 15.5391 9.75L14.6953 4.94531V4.89844H14.6719C14.6104 4.48535 14.3701 4.14258 14.0625 3.91406C13.7402 3.67676 13.3535 3.50391 12.8906 3.375C11.9619 3.12012 10.6904 3 9 3ZM9 4.5C10.6113 4.5 11.7891 4.63477 12.4922 4.82812C12.8438 4.9248 13.0752 5.03613 13.1719 5.10938C13.2217 5.14453 13.2246 5.15625 13.2188 5.15625L13.6406 7.5H4.35938L4.78125 5.15625C4.78711 5.15625 4.80176 5.1416 4.80469 5.10938C4.81348 5.10352 4.81641 5.11816 4.82812 5.10938C4.9248 5.03613 5.15625 4.9248 5.50781 4.82812C6.21094 4.63477 7.38867 4.5 9 4.5ZM0.75 5.25V8.25H2.25V5.25H0.75ZM15.75 5.25V8.25H17.25V5.25H15.75ZM6.75 9H11.25C11.7012 9 12 9.375 12 9.75V12C12 12.4512 11.625 12.75 11.25 12.75H6.75C6.29883 12.75 6 12.375 6 12V9.75C6 9.29883 6.375 9 6.75 9ZM13.9453 11.1797H14.625C14.8125 11.2588 15.0234 11.2588 15.2109 11.1797H15.2344C15.5332 11.1797 15.75 11.3965 15.75 11.6953V12.2344C15.75 12.5332 15.5332 12.75 15.2344 12.75H13.9453C13.6465 12.75 13.4297 12.5332 13.4297 12.2344V11.6953C13.4297 11.3965 13.6465 11.1797 13.9453 11.1797ZM2.76562 11.25H4.05469C4.28027 11.25 4.5 11.4668 4.5 11.7656V12.3047C4.5 12.5303 4.2832 12.75 3.98438 12.75H2.76562C2.4668 12.75 2.25 12.5332 2.25 12.2344V11.6953C2.25 11.4697 2.4668 11.25 2.76562 11.25ZM0.75 15V17.4844C0.75 17.7832 0.966797 18 1.26562 18H3.23438C3.5332 18 3.75 17.7832 3.75 17.4844V16.5H14.25V17.4844C14.25 17.7832 14.4668 18 14.7656 18H16.7344C17.0332 18 17.25 17.7832 17.25 17.4844V15H0.75Z"/>
+		</symbol>
+
+
+		<symbol id="ic-video" viewBox="0 0 30.051 30.051">
+			<path d="M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069
+		c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532
+		c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z"/>
+			<path d="M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021
+		C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518
+		c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z"/>
+		</symbol>
+
+
+		<symbol id="ic-plus"  viewBox="0 0 510 510">
+
+			<path d="M280.5,153h-51v76.5H153v51h76.5V357h51v-76.5H357v-51h-76.5V153z M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255
+			s255-114.75,255-255S395.25,0,255,0z M255,459c-112.2,0-204-91.8-204-204S142.8,51,255,51s204,91.8,204,204S367.2,459,255,459z"/>
+
+		</symbol>
+
+	</svg>
+</div>
+
+
+
+
+
+<script src="libs/jquery-2.1.3.min.js"></script>
+<script src="libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="libs/slick-1.8.1/slick.min.js"></script>
+<script src="libs/magnific.popup/magnific.popup.js"></script>
+<script src="js/main.js"></script>
+<script src="js/_scheme.js"></script>
+
+
+</body>
+</html>

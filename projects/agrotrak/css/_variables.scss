@@ -1,0 +1,51 @@
+$white: #FFFFFF;
+$light-background: #F3F5F7;
+$bg: #E0E6EB;
+$gray: #89979E;
+$text: #656F74;
+$fill: #333333;
+$green-dark: #39A855;
+$green-light: #80D495;
+$green-hover: #C9E8CF;
+$white-transparent: rgba(255,255,255,0.5);
+$orange: #F2994A;
+$orange-medium: #FFD696;
+$orange-fill: #FFF3E0;
+$red: #EB5757;
+$red-fill: #FDEFEF;
+
+$gray-grad: linear-gradient(180deg, #666666 0%, #4D4D4D 100%);
+$radial-logo: radial-gradient(208.27px at 13.46% 11.11%, #80D495 0%, #007C2B 100%);
+$radial-logo__big:  radial-gradient(807.05px at 13.46% 11.11%, #80D495 0%, #007C2B 100%);
+$radial-logo__medium:  radial-gradient(553.22px at 13.46% 11.11%, #80D495 0%, #007C2B 100%);
+
+
+@mixin resetInputsBtns() {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  outline: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+@mixin transitionAll() {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin captionGray() {
+  color: $gray;
+  font-size: 16px;
+}
+
+@mixin captionGrayMobile() {
+  font-size: 14px;
+}
