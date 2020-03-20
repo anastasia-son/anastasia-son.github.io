@@ -1,0 +1,117 @@
+.catalog-item {
+  border: 1px solid #d9d8d8;
+  text-align: center;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.catalog-item__body {
+  position: relative;
+}
+.catalog-item__subtitle {
+  margin: 0;
+  padding: 20px 10px 8px;
+}
+.catalog-item__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 22px;
+  padding: 10px 10px 20px;
+  letter-spacing: 0.05em;
+}
+.catalog-item__img {
+  padding: 0 10px 14px;
+}
+.catalog-item__img img {
+  max-height: 164px;
+}
+.catalog-item__stock {
+  position: absolute;
+  padding: 5px 10px;
+  bottom: 5px;
+  left: 10px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgba(202, 201, 203, 0.8);
+}
+.catalog-item__bottom {
+  position: relative;
+  padding: 0 20px 14px;
+}
+.catalog-item__bottom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 11px;
+  right: 11px;
+  border-top: 1px solid #d9d8d8;
+}
+.catalog-item__prices {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 12px 0 10px;
+}
+.catalog-item__prices--changed {
+  justify-content: space-between;
+}
+.catalog-item__price {
+  margin: 0;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.catalog-item__price--old {
+  position: relative;
+}
+.catalog-item__price--old::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #1c1e1f;
+  opacity: 0.6;
+}
+.catalog-item__price--new {
+  color: #ff0000;
+}
+.catalog-item__price-value {
+  font-size: 1.6em;
+}
+.catalog-item__act {
+  display: flex;
+}
+.catalog-item__act .btn {
+  flex-grow: 1;
+}
+.catalog-item__quantity {
+  width: 50px;
+  margin-left: 10px;
+}
+.catalog-item__quantity input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 7px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #1c1e1f;
+  text-align: center;
+  outline: 0;
+  font-weight: bold;
+}
+.catalog-item__quantity input:disabled {
+  opacity: 0.28;
+}
+.catalog-item__quantity input::-webkit-input-placeholder {
+  color: inherit;
+}
+.catalog-item__quantity input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/*# sourceMappingURL=catalog-item.css.map */

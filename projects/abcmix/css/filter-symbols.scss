@@ -1,0 +1,72 @@
+@import "_variables";
+.filter-symbols {
+  &__symbol {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  & input {
+    display: block;
+    width: 75px;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight: bold;
+    border: 0;
+    padding: 6px 0;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    outline: 0;
+  }
+
+  &__hamburger.unset-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 17px;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    cursor: pointer;
+    outline: 0;
+    transition: all 0.3s;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid $black;
+      top: 7px;
+      transition: inherit;
+    }
+  }
+  &__hamburger:hover, &__hamburger:hover::after {
+    border-color: $red;
+  }
+
+}
+.symbols-popup {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  &__content {
+    background-color: $white;
+  }
+  &__header {
+    background-color: $gray;
+    padding: 16px 30px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+  &__body {
+    padding: 20px 30px 30px;
+  }
+}

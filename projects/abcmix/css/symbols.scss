@@ -1,0 +1,62 @@
+@import "_variables";
+.symbols {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+    height: 70px;
+    border: 1px solid $gray;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -1px;
+    margin-top: -1px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  &__item input {
+    display: none;
+  }
+  &__item label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  &__sign {
+    transition: all 0.3s;
+  }
+  &__item:hover &__sign {
+    color: $red;
+  }
+
+  &__item input:checked + &__sign {
+    color: $red;
+  }
+
+  &__item-space {
+    display: inline-block;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+}
+
+.symbols-form {
+  &__bottom {
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__bottom .btn {
+    min-width: 150px;
+  }
+}

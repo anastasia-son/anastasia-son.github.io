@@ -1,0 +1,16 @@
+.filter-selects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.filter-selects__50 {
+  padding: 6px;
+  width: 50%;
+}
+.filter-selects__100 {
+  padding: 6px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=filter-selects.css.map */

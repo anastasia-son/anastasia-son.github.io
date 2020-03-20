@@ -1,0 +1,125 @@
+@import "_variables";
+.catalog-item {
+  border: 1px solid $gray;
+  text-align: center;
+  margin-top: -1px;
+  margin-left: -1px;
+
+  &__body {
+    position: relative;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 20px 10px 8px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 10px 10px 20px;
+    letter-spacing: 0.05em;
+  }
+  &__img {
+    padding: 0 10px 14px;
+  }
+  &__img img {
+    max-height: 164px;
+  }
+  &__stock {
+    position: absolute;
+    padding: 5px 10px;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(202,201,203,0.8);
+  }
+  &__bottom {
+    position: relative;
+    padding: 0 20px 14px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 11px;
+      right: 11px;
+      border-top: 1px solid $gray;
+    }
+  }
+  &__prices {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0 10px;
+    &--changed {
+      justify-content: space-between;
+    }
+  }
+  &__price {
+    margin: 0;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+
+    &--old {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid $black;
+        opacity: 0.6;
+      }
+    }
+    &--new {
+      color: $red;
+
+    }
+  }
+  &__price-value {
+    font-size: 1.6em;
+  }
+  &__act {
+    display: flex;
+  }
+  &__act .btn {
+    flex-grow: 1;
+  }
+  &__quantity {
+    width: 50px;
+    margin-left: 10px;
+  }
+  &__quantity input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 7px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid $black;
+    text-align: center;
+    outline: 0;
+    font-weight: bold;
+  }
+  &__quantity input:disabled {
+    opacity: 0.28;
+  }
+  &__quantity input::-webkit-input-placeholder {
+    color: inherit;
+  }
+  &__quantity input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+
+
+}
+

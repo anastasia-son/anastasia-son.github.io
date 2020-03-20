@@ -1,0 +1,41 @@
+.symbol-settings {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+}
+.symbol-settings__col {
+  padding-left: 13px;
+  padding-right: 13px;
+  width: 50%;
+}
+.symbol-settings__item {
+  width: 100%;
+  padding: 15px 0;
+}
+.symbol-settings__item label {
+  margin: auto;
+}
+.symbol-settings__item input {
+  display: none;
+}
+.symbol-settings__sign {
+  display: block;
+  cursor: pointer;
+}
+.symbol-settings__sign svg {
+  display: block;
+  margin: auto;
+}
+.symbol-settings__sign:hover {
+  color: #ff0000;
+}
+.symbol-settings__item input:checked + .symbol-settings__sign {
+  color: #ff0000;
+}
+.symbol-settings__item input:disabled + .symbol-settings__sign {
+  opacity: 0.25;
+  color: inherit;
+  cursor: default;
+}
+
+/*# sourceMappingURL=symbol-settings.css.map */

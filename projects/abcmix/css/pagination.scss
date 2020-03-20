@@ -1,0 +1,45 @@
+@import "_variables";
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 48px 0 30px;
+  text-align: center;
+  &__item {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $black;
+    border-radius: 5px;
+    width: 50px;
+    height: 48px;
+    text-decoration: none;
+    color: inherit;
+    &.current {
+      border-color: $red;
+    }
+    &:hover {
+      color: $red;
+    }
+  }
+  &__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media(max-width: 340px) {
+  .pagination__link {
+    width: 46px;
+    height: 44px;
+  }
+}

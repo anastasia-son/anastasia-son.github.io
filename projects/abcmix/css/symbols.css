@@ -1,0 +1,58 @@
+.symbols {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.symbols__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 71px;
+  height: 70px;
+  border: 1px solid #d9d8d8;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.symbols__item input {
+  display: none;
+}
+.symbols__item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.symbols__sign {
+  transition: all 0.3s;
+}
+.symbols__item:hover .symbols__sign {
+  color: #ff0000;
+}
+.symbols__item input:checked + .symbols__sign {
+  color: #ff0000;
+}
+.symbols__item-space {
+  display: inline-block;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.symbols-form__bottom {
+  padding-top: 30px;
+  text-align: center;
+}
+.symbols-form__bottom .btn {
+  min-width: 150px;
+}
+
+/*# sourceMappingURL=symbols.css.map */

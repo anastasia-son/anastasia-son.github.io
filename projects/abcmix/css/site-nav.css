@@ -1,0 +1,9 @@
+.site-nav__link {
+  display: inline-block;
+  padding: 12px 10px 10px;
+}
+.site-nav__link.current {
+  border-color: #cac9cb;
+}
+
+/*# sourceMappingURL=site-nav.css.map */

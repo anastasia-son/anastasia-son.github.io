@@ -1,0 +1,17 @@
+@import "_variables";
+
+.filter-selects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+
+  &__50 {
+    padding: 6px;
+    width: 50%;
+  }
+  &__100 {
+    padding: 6px;
+    width: 100%;
+  }
+}

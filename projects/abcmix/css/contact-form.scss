@@ -1,0 +1,160 @@
+@import "_variables";
+
+.contact-form {
+  position: relative;
+  width: 90%;
+  max-width: 954px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  &__logo {
+    width: 70px;
+    padding-bottom: 16px;
+  }
+  &__logo img {
+    display: block;
+  }
+
+  &__text-1 {
+    padding: 16px 0;
+    margin: auto 0 0;
+    font-weight: bold;
+  }
+  &__text-1-line-1 {
+    display: block;
+    font-size: 16px;
+  }
+  &__text-1-line-2 {
+    display: block;
+    font-size: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+  }
+  &__text-2 {
+    margin: auto 0 0;
+    padding: 16px 0 30px;
+  }
+}
+
+.contact-form .btn-close.btn-close {
+  right: 14px;
+  color: $white;
+}
+
+.contact-layout {
+  display: flex;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 26px 30px;
+    background-color: #fff;
+  }
+  &__right {
+    width: 60%;
+    padding: 44px 25px 30px 22px;
+    background-color: $black;
+  }
+}
+
+.c-form {
+  &__layout {
+    display: flex;
+    margin-left: -11px;
+    margin-right: -11px;
+  }
+
+  &__left {
+    width: 214px;
+    flex-shrink: 0;
+    padding: 0 11px;
+  }
+  &__right {
+    display: flex;
+    width: 100%;
+    padding: 0 11px;
+  }
+  &__elem {
+    padding: 11px 0;
+  }
+  &__elem:last-child {
+    padding-bottom: 0;
+  }
+  &__elem--textarea {
+    display: flex;
+    width: 100%;
+  }
+  &__elem--textarea .form-elem__label {
+    display: flex;
+    width: 100%;
+  }
+  &__elem--textarea textarea {
+    width: 100%;
+  }
+
+  &__bottom {
+    color: #d3d2d2;
+    font-size: 13px;
+  }
+  &__agree {
+    padding-top: 22px;
+    padding-bottom: 12px;
+  }
+  &__required {
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 26px;
+  }
+  &__required::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid $red;
+    transform: rotate(45deg);
+  }
+  & .btn {
+    padding: 16px 55px;
+  }
+
+}
+
+@media(max-width: 890px) {
+  .contact-layout {
+    display: block;
+  }
+  .contact-layout__left {
+    width: 100%;
+    padding: 20px 22px;
+  }
+  .contact-layout__right {
+    width: 100%;
+    padding: 20px 22px;
+  }
+  .contact-form__text-2 {
+    padding-bottom: 0;
+  }
+  .contact-form__text-1 {
+    padding: 8px 0;
+  }
+  .contact-form__text-2 {
+    padding: 8px 0;
+  }
+  .contact-form .btn-close.btn-close {
+    color: $black;
+  }
+}
+
+@media(max-width: 520px) {
+  .c-form__layout {
+    display: block;
+  }
+  .c-form__left {
+    width: 100%;
+  }
+}

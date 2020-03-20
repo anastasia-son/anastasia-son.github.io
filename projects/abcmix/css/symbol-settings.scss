@@ -1,0 +1,42 @@
+@import "_variables";
+.symbol-settings {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+  &__col {
+    padding-left: 13px;
+    padding-right: 13px;
+    width: 50%;
+  }
+  &__item {
+    width: 100%;
+    padding: 15px 0;
+  }
+  &__item label {
+    margin: auto;
+  }
+  &__item input {
+    display: none;
+  }
+  &__sign {
+    display: block;
+    cursor: pointer;
+  }
+  &__sign svg {
+    display: block;
+    margin: auto;
+  }
+
+  &__sign:hover  {
+    color: $red;
+  }
+  &__item input:checked + &__sign {
+    color: $red;
+  }
+  &__item input:disabled + &__sign {
+    opacity: 0.25;
+    color: inherit;
+    cursor: default;
+  }
+}
+

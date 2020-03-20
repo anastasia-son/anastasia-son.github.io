@@ -1,0 +1,70 @@
+.filter-symbols__symbol {
+  position: relative;
+  margin-bottom: 20px;
+}
+.filter-symbols input {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: bold;
+  border: 0;
+  padding: 6px 0;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  outline: 0;
+}
+.filter-symbols__hamburger.unset-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 17px;
+  border-top: 1px solid #1c1e1f;
+  border-bottom: 1px solid #1c1e1f;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.3s;
+}
+.filter-symbols__hamburger.unset-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #1c1e1f;
+  top: 7px;
+  transition: inherit;
+}
+.filter-symbols__hamburger:hover, .filter-symbols__hamburger:hover::after {
+  border-color: #ff0000;
+}
+
+.symbols-popup {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.symbols-popup__content {
+  background-color: #fff;
+}
+.symbols-popup__header {
+  background-color: #d9d8d8;
+  padding: 16px 30px;
+}
+.symbols-popup__title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+.symbols-popup__body {
+  padding: 20px 30px 30px;
+}
+
+/*# sourceMappingURL=filter-symbols.css.map */

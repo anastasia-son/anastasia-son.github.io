@@ -1,0 +1,91 @@
+@import "variables";
+
+.header__bottom {
+  position: relative;
+}
+
+body.show-search {
+  //height: 100vh;
+  //overflow-y: hidden;
+}
+
+.search-line {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s ease 0.2s, opacity 0.2s;
+
+  background-color: $gray;
+  padding: 8px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.3);
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  &__content {
+    position: relative;
+  }
+  &__search {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+  &__label {
+    visibility: hidden;
+    font-size: 0;
+    position: absolute;
+  }
+
+  &__search-box.input-style {
+    padding: 0;
+    display: flex;
+  }
+
+  & input {
+    display: block;
+    width: 100%;
+    padding: 16px 20px 15px;
+    border: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    outline: 0;
+    font-size: inherit;
+  }
+  &__submit {
+    -webkit-appearance: none;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    outline: 0;
+    font-size: 0;
+    cursor: pointer;
+    padding: 10px 17px;
+    color: $black;
+  }
+  &__submit svg {
+    display: block;
+  }
+  &__close.btn-close {
+    right: -10px;
+  }
+}
+
+.container--search {
+  position: relative;
+}
+
+@media(max-width: 480px) {
+  .search-line__search {
+    margin: 0;
+    padding: 0 60px 0 0;
+  }
+}
