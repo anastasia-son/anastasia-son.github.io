@@ -69,15 +69,16 @@
 	position: absolute;
 	left: 100%;
 	top: 50%;
-	transform: translate(-200px, -50%);
+	transform: translate(-10px, -50%);
 	padding: 8px 10px;
 	background-color: rgba(50, 50, 50, 0.9);
 	color: #fff;
 	font-size: 14px;
 	white-space: nowrap;
 	opacity: 0;
+	visibility: hidden;
 	border-radius: 10px;
-	transition: opacity 0.15s ease-out, transform 0.15s ease-out 0.2s;
+	transition: all 0.2s ease-out 0.15s;
 }
 
 .sidebar-item-name::before {
@@ -100,7 +101,7 @@
 .sidebar-nav-item a:focus .sidebar-item-name {
 	transform: translate(10px, -50%);
 	opacity: 1;
-	transition: opacity 0.15s ease-out 0.2s, transform 0.15s ease-out;
+	visibility: visible;
 }
 
 @media (max-width: 1300px) {

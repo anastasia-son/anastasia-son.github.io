@@ -1,0 +1,166 @@
+@import "variables";
+
+.news-img {
+  margin: 0 0 40px;
+  padding: 0;
+
+  @at-root & img {
+    display: block;
+    max-width: 100%;
+  }
+
+  @at-root  &__caption {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+
+  @at-root &__caption-number {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  @at-root &__caption-text {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  @at-root &__caption-author {
+    color: $snot-green;
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+  }
+  @at-root &__caption-author a {
+    color: inherit;
+    text-decoration: none;
+    outline: 0;
+    @at-root &:hover, &:focus {
+      color: $dark-lime;
+    }
+  }
+
+}
+
+.single-image {
+  padding: 0 0 30px;
+}
+
+.single-image__slider-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @at-root & .single-image__slider-nav {
+    margin-bottom: 28px;
+  }
+}
+
+.single-slide {
+
+  width: 260px;
+  margin-right: 28px;
+  @at-root .owl-item:only-child .single-slide {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  @at-root &__img {
+    margin: 0;
+    padding: 0;
+  }
+
+  @at-root &__img img {
+    display: block;
+  }
+
+  @at-root &__caption {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  @at-root &__caption-number {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  @at-root &__caption-text {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+}
+
+@media(min-width: 576px) {
+  .single-slide {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 768px) {
+
+  .single-image {
+    margin-bottom: 10px;
+  }
+
+  .single-image__slider-wrapper {
+    @at-root & .single-image-slider {
+
+    }
+
+    @at-root & .single-image__slider-nav {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 0;
+      order: 0;
+    }
+
+  }
+
+  .single-slide {
+
+    @at-root &__img {
+      position: relative;
+    }
+
+    @at-root &__caption {
+      margin-top: 32px;
+      padding-left: 130px;
+      padding-right: 160px;
+      display: flex;
+      align-items: baseline;
+    }
+
+    @at-root &__caption-number {
+      width: auto;
+      margin-right: 10px;
+    }
+
+  }
+
+}
+
+@media(min-width: 992px) {
+
+}
+
+@media(min-width: 1200px) {
+
+}
+
+@media(min-width: 1366px) {
+
+}

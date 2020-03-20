@@ -1,0 +1,252 @@
+.articles-section {
+  padding: 50px 0;
+}
+
+.container--articles {
+  max-width: 1366px;
+  padding-left: 16px;
+}
+
+.articles-slider__item-article {
+  width: 260px;
+  height: 372px;
+}
+
+.articles-stage {
+  display: flex;
+}
+.articles-stage__major {
+  display: flex;
+}
+
+.articles-stage__major-article {
+  width: 260px;
+  padding-top: 370px;
+  margin-right: 28px;
+}
+
+.articles-stage__minor {
+  display: flex;
+}
+
+.articles-stage__minor-article {
+  width: 260px;
+  padding-top: 370px;
+  margin-right: 28px;
+}
+.article {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #373c41);
+  opacity: 0.6;
+  transition: all 0.6s ease-out;
+}
+
+.article:hover::before, .article:focus::before {
+  opacity: 0;
+}
+
+.article__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -44px;
+  color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  transition: all 0.4s ease-out;
+}
+
+.article:hover .article__text, .article:focus .article__text {
+  bottom: 0;
+}
+
+.article__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.article.article--gallery-page .article__title {
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+
+.article__date {
+  display: block;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.article .btn-arrow {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.article__preview {
+  display: none;
+  margin: 16px 0 10px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.article.article--news-page {
+  min-height: 372px;
+}
+
+.article.article--gallery-page {
+  padding-top: 68%;
+}
+
+@media (max-width: 767px) {
+  .articles-section--desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) {
+  .container--articles {
+    padding-left: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .articles-section {
+    padding-top: 64px;
+  }
+
+  .container--articles {
+    padding-right: 38px;
+  }
+
+  .articles-section--mobile {
+    display: none !important;
+  }
+
+  .articles-stage {
+    flex-wrap: wrap;
+  }
+  .articles-stage__major {
+    display: flex;
+    width: 100%;
+  }
+
+  .articles-stage__major-article {
+    width: 100%;
+    padding-top: 65%;
+    margin-right: 0;
+  }
+  .articles-stage__major-article .article__title {
+    font-size: 28px;
+  }
+
+  .articles-stage__minor {
+    width: 100%;
+    display: flex;
+    padding-top: 28px;
+  }
+
+  .articles-stage__minor-article {
+    width: 50%;
+    padding-top: 34%;
+    margin-right: 0;
+  }
+  .articles-stage__minor-article:first-child {
+    margin-right: 14px;
+  }
+
+  .articles-stage__minor-article:last-child {
+    margin-left: 14px;
+  }
+
+  .articles-stage__minor-article .article__title {
+    font-size: 16px;
+  }
+
+  .article__text {
+    padding: 20px 32px;
+  }
+
+  .article.article--gallery-page .article__title {
+    font-size: 20px;
+    padding-bottom: 36px;
+  }
+
+  .article__date {
+    margin-bottom: 6px;
+  }
+
+  .btn-arrow {
+    margin-top: 6px;
+  }
+
+  .article.article--news-page {
+    min-height: auto;
+    padding-top: 69%;
+  }
+}
+@media (min-width: 992px) {
+  .articles-stage__major {
+    display: flex;
+    width: 65%;
+  }
+
+  .articles-stage__major-article {
+    width: 100%;
+    padding-top: 66%;
+  }
+
+  .articles-stage__minor {
+    width: 35%;
+    flex-direction: column;
+    padding-left: 28px;
+    padding-top: 0;
+  }
+
+  .articles-stage__minor-article {
+    width: 100%;
+    padding-top: 64%;
+    flex-grow: 1;
+  }
+  .articles-stage__minor-article:first-child {
+    margin-right: 0;
+  }
+
+  .articles-stage__minor-article:last-child {
+    margin-top: 28px;
+    margin-left: 0;
+  }
+
+  .article__title {
+    font-size: 20px;
+  }
+
+  .article__preview {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .container--articles {
+    padding-left: 147px;
+    padding-right: 147px;
+  }
+
+  .articles-section {
+    padding: 80px 0;
+  }
+}
+
+/*# sourceMappingURL=articles.css.map */

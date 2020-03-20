@@ -1,0 +1,294 @@
+@import "variables";
+
+.faces-section {
+  position: relative;
+  padding: 40px 0 30px;
+
+  @at-root &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60%;
+    background-color: $lemon-green;
+  }
+
+}
+
+.title-h2--faces {
+  position: relative;
+  margin-bottom: 84px;
+}
+
+.container--faces {
+  max-width: 1366px;
+  padding-left: 16px;
+}
+
+.faces-content {
+  position: relative;
+}
+
+.faces-slider-wrapper {
+  position: relative;
+
+  @at-root &__nav {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 16px;
+  }
+}
+
+.face {
+  width: 260px;
+  @at-root &__left {
+    margin-bottom: 28px;
+    position: relative;
+  }
+  @at-root &__right {
+    line-height: 1.7;
+  }
+
+  @at-root &__img {
+    position: relative;
+    z-index: 2;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 97%;
+    overflow: hidden;
+  }
+  @at-root &__img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+
+  @at-root &__number {
+    position: absolute;
+
+    font-size: 84px;
+    font-weight: bold;
+    color: $white;
+  }
+
+  @at-root &__number--mobile {
+    position: absolute;
+    left: 14px;
+    bottom: -28px;
+    z-index: 2;
+  }
+
+  @at-root &__number--desktop {
+    display: none;
+  }
+
+  @at-root &__title {
+    font-weight: bold;
+    margin: 0 0 16px;
+    font-size: 24px;
+  }
+  @at-root &__who {
+    opacity: 0.8;
+    font-size: 12px;
+    margin-bottom: 28px;
+  }
+
+  @at-root &__quote {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+}
+
+.faces-section .slider-arrows button:not(.disabled):hover svg,
+.faces-section .slider-arrows button:not(.disabled):focus svg {
+  fill: $charcoal-gray;
+}
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .face__img img, .owl-carousel .owl-item .face__img img {
+    display: none; /*for IE*/
+  }
+}
+
+@media(min-width: 576px) {
+
+  .container--faces {
+    padding-left: 38px;
+  }
+
+}
+
+@media(min-width: 768px) {
+  .container--faces {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .faces-section {
+    @at-root &::before {
+      right: 40%;
+      bottom: 0;
+    }
+  }
+
+  .faces-slider-wrapper {
+    @at-root &__nav {
+      width: 50%;
+      z-index: 3;
+      left: auto;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .faces-content {
+
+    @at-root &::before {
+      content: '';
+      position: absolute;
+      width: 153px;
+      height: 674px;
+      right: 0;
+      bottom: -46px;
+      background-image: url('../img/norm_letters_bg.svg');
+      background-position: 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+
+  .title-h2--faces {
+    margin-bottom: 30px;
+  }
+
+  .face {
+    width: auto;
+    display: flex;
+
+    @at-root &__left {
+      display: flex;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+
+
+    @at-root &__right {
+      width: 50%;
+      padding-right: 20px;
+      padding-top: 40px; /*for .faces-slider-wrapper__nav.slider-panel*/
+      padding-bottom: 26px;
+    }
+
+    @at-root &__img {
+      width: 70%;
+      padding-top: 56%;
+    }
+
+
+    @at-root &__number {
+      font-size: 108px;
+    }
+
+    @at-root &__number--mobile {
+      display: none;
+    }
+    @at-root &__number--desktop {
+      display: block;
+      left: calc(70% - 38px);
+    }
+
+    @at-root &__quote {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+
+}
+
+@media(min-width: 992px) {
+  .faces-section {
+    padding: 48px 0 80px;
+  }
+
+  .faces-content {
+    @at-root &::before {
+      width: 169px;
+      height: 750px;
+      right: 40px;
+      bottom: -120px;
+    }
+  }
+
+
+}
+
+@media(min-width: 1200px) {
+  .container--faces {
+    padding-left: 147px;
+    padding-right: 147px;
+  }
+
+  .faces-content {
+    @at-root &::before {
+      width: 192px;
+      height: 850px;
+      right: 70px;
+    }
+  }
+
+  .face {
+
+    @at-root &__img {
+      width: 74%;
+    }
+
+    @at-root &__number {
+      font-size: 151px;
+    }
+
+    @at-root &__right {
+      padding-right: 80px;
+    }
+
+    @at-root &__who{
+      margin-bottom: 34px;
+    }
+
+    @at-root &__title {
+      font-size: 28px;
+    }
+
+
+  }
+
+}
+
+@media(min-width: 1366px) {
+
+  .faces-section::before {
+    right: 45%;
+  }
+
+  .face {
+    @at-root &__right {
+      padding-right: 120px;
+    }
+  }
+}
